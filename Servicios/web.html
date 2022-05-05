@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Los estilos personalizados-->
+		<link rel="stylesheet" href="../css/estilos.css">
+		<!--Las fuentes personalizadas-->
+		<link rel="stylesheet" type="text/css" href="../css/fuentes.css">
+		<title>SPECT PÁGINAS WEB</title>
+	</head>
+
+	<body>
+		<!------------------------------------------------------------------------->
+		<!---------------------------Start of the header--------------------------->
+		<!------------------------------------------------------------------------->
+		<div class="header">
+			<div class="container-header">
+				<div class="logo"> 
+					<a href="../index.html"> <img src="../images/SPECT LOGO.png" class="logo_1"> </a> 
+				</div>
+
+				<nav class="menu">
+					<a href="../productos.html"> Productos</a>
+					<a href="../servicios.html"> Servicios</a>
+					<a href="../contactenos.html"> Contactenos</a>
+					<a class="facebook"  href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"></a>
+					<a class="instagram"  href="https://www.instagram.com/spect_cr/" target="_blank"> </a>
+				</nav>
+			</div>
+		</div>
+		<!------------------------------------------------------------------------->
+		<!---------------------------End of the header----------------------------->
+		<!------------------------------------------------------------------------->
+		<div class="welcome" id="welcome">
+			<img src="../images/Foto-perfil-SPECT.png" class="logoWelcome" id="logoWelcome">
+			<div id="carga_pagina">
+			</div>
+		</div>
+		<!------------------------------------------------------------------------->
+		<!---------------------------START OF THE CONTENT-------------------------->
+		<!------------------------------------------------------------------------->
+		<div class="servicio_titulo">
+			CREACIÓN DE PÁGINAS WEB
+		</div>
+
+		<div class="container_servicio">
+			<div class="descripcion">
+				<h1>¿De qué trata?</h1>
+				El servicio de creación de páginas web está pensado principalmente para todos aquellos pequeños empresarios qué desean iniciar su negocio en línea
+                pero no tienen o no saben como.
+			</div>
+
+            <!-- INICIO DEL SLIDER -->
+
+            <div class="container_slider_web_page">
+                <div class="slider_web" id="slider_web">
+                    <div class="slider_web_section"><img src="../images/a142.png" alt="" class="slider_web_img"></div>
+
+                    <div class="slider_web_section"><img src="../images/A3.png" alt="" class="slider_web_img"></div>
+
+                    <div class="slider_web_section"><img src="../images/Captura de pantalla 2022-03-29 111128.png" alt="" class="slider_web_img"></div>
+                    
+                    <div class="slider_web_section"><img src="../images/SPECT FACE.png" alt="" class="slider_web_img"></div>
+                </div>
+            </div>
+            <script src="../js/sliders_web.js"></script>
+
+            <!-- FIN DEL SLIDER -->
+
+			<div class="descripcion">
+				<h1>¿Cómo funciona?</h1>
+				Usted deberá ponerse en contacto con nosotros por los medios que le brindamos para conocer sus necesidades y cotizarle de manera adecuada.
+				<br><br>
+				<h3 class="center_text">¡Empiece ahora!</h3>
+			</div>
+			
+		</div>
+
+		<div class="titulo_links_contacto center_text">Contactá con nosotros acá</div>
+
+		<div class="links_contacto_servicio link_servicio">
+			<div class="link_correo">
+				<a href="mailto:teamspectcr@gmail.com?Subject=Hola, quisiera más información sobre la creación de una página web."> <img src="../images/mailbox.png" alt="" class="correo_img"> CORREO </a>
+			</div>
+
+			<div class="link_whatsapp">
+				<a href="https://api.whatsapp.com/send?phone=50683443610 &text=Hola, me interesa el servicio de creación de páginas web" target="_blank"> <img src="../images/whatsapp.png" alt="" class="whatsapp_img"> WHATSAPP </a>
+			</div>
+
+			<div class="link_messenger">
+				<a href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"> <img src="../images/messenger.png" alt="" class="messenger_img"> MESSENGER </a>
+			</div>
+		</div>
+
+		<div class="go_back">
+			<a href="../servicios.html"> Volver a lista de servicios </a>
+		</div>
+		<!------------------------------------------------------------------------->
+		<!---------------------------END OF THE CONTENT---------------------------->
+		<!------------------------------------------------------------------------->
+		<script>
+			window.onload = function() {
+				setTimeout(function () {
+					document.getElementById('SPECT_tittle_servicios').style.width = '600px';
+				}, 1500)
+				setTimeout(function () {
+					document.getElementById("SPECT_tittle_txt_servicios").style.opacity='1';
+				}, 2500)
+				setTimeout(function () {
+					document.getElementById("welcome").style.width='0%';
+				}, 950)
+				setTimeout(function () {
+					document.getElementById("welcome").style.opacity='0';
+				}, 900)
+				setTimeout(function () {
+					document.getElementById("welcome").style.display='none';
+				}, 1700)
+			}
+		</script>
+	</body>
+</html>
