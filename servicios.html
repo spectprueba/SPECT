@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!--Los estilos personalizados-->
+		<link rel="stylesheet" href="css/estilos.css">
+		<!--Las fuentes personalizadas-->
+		<link rel="stylesheet" type="text/css" href="css/fuentes.css">
+		<title>SPECT Servicios</title>
+	</head>
+
+	<body>
+		<div class="contenedor_general">
+			<!------------------------------------------------------------------------->
+			<!---------------------------Start of the header--------------------------->
+			<!------------------------------------------------------------------------->
+			<div class="header">
+				<div class="container-header">
+					<div class="logo"> 
+						<a href="index.html"> <img src="./images/SPECT LOGO.png" class="logo_1"> </a> 
+					</div>
+
+					<nav class="menu">
+						<a href="productos.html"> Productos</a>
+						<a href="servicios.html"> Servicios</a>
+						<a href="contactenos.html"> Contactenos</a>
+						<a class="facebook"  href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"></a>
+						<a class="instagram"  href="https://www.instagram.com/spect_cr/" target="_blank"> </a>
+					</nav>
+
+					<nav class="toggle" id="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</nav>
+					<div class="container_toggle_bar" id="container_toggle_bar">
+						<div class="cont_toggle_bar" id="cont_toggle_bar">
+							<nav>
+								<a href="productos.html"> Productos</a>
+								<a href="servicios.html"> Servicios</a>
+								<a href="contactenos.html"> Contactenos</a>
+								<a href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"> Facebook</a>
+								<a href="https://www.instagram.com/spect_cr/" target="_blank"> Instagram </a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------------------------------------------------->
+			<!---------------------------End of the header----------------------------->
+			<!------------------------------------------------------------------------->
+			<div class="welcome" id="welcome">
+				<img src="./images/Foto-perfil-SPECT.png" class="logoWelcome" id="logoWelcome">
+				<div id="carga_pagina">
+				</div>
+			</div>
+			<!------------------------------------------------------------------------->
+			<!---------------------------START OF THE CONTENT-------------------------->
+			<!------------------------------------------------------------------------->
+			<section id="SPECT_container_servicios">
+				<!--FLOATING TITTLE-->
+				<div class="SPECT_tittle_servicios" id="SPECT_tittle_servicios">
+					<div class="SPECT_tittle_txt_servicios" id="SPECT_tittle_txt_servicios">
+						<h1>SPECT</h1>Servicios
+					</div>
+				</div>
+				<!--FLOATING TITTLE-->
+			</section>
+
+			<img src="./images/Servicios.png" alt="" class="services_banner">
+			<div class="titulo">
+				¿QUÉ OFRECEMOS?
+			</div>
+
+			
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------WEB PAGE CREATION----------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+			<div class="element_A_container_WEBPAGE">
+				<div class="element_A_imgarea_WEBPAGE">
+					<div class="element_A_tittle_WEBPAGE">
+						CREACIÓN DE PÁGINAS WEB
+					</div>
+
+					<img src="./images/Proyecto-marketing-Digital.jpg" alt="" class="element_A_img">
+
+
+					<div class="element_A_description_WEBPAGE">
+						¿Necesitás una página web?
+						<br>
+						¡Te damos ese empujón que tu negocio necesita!
+					</div>
+
+					<a href="Servicios\web.html" class="services_grid_button services_button_element_A">CLICK AQUÍ</a>
+				</div>
+
+			</div>
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------WEB PAGE CREATION----------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+
+
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------GRAPHIC DESIGN SERVICE------------------------------>
+			<!-------------------------------------------------------------------------------------------->
+			<div class="element_B_container common_grid">
+				<div class="element_B_left">
+					<div class="element_B_tittle PC_service">
+						DISEÑO GRÁFICO
+					</div>
+					<div class="element_B_description_text">
+						¿Necesita alguna solución gráfica?
+					</div>
+					<img src="./images/diseño gráfico.jpg" alt="" class="element_B_img">
+
+					<a href="Servicios\diseño gráfico.html" class="services_button_element_B services_center_button">SABER MÁS</a>
+				</div>
+			</div>
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------GRAPHIC DESIGN SERVICE------------------------------>
+			<!-------------------------------------------------------------------------------------------->
+
+
+
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------PS3 SERVICE----------------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+			<div class="element_A_container">
+				<div class="PS3_txtarea">
+					<div class="element_A_tittle">
+						LIBERACIÓN PS3
+					</div>
+					<div class="element_A_description">
+						¿Querés dejar de pagar por juegos? Esto en definitiva es para vos
+					</div>
+					<a href="Servicios/ps3.html" class="services_grid_button services_button_element_A">SABER MÁS</a>
+				</div>
+
+				<div class="container_slider_services">
+					<div class="slider_services" id="slider_services">
+						<div class="slider_section_services">
+							<img src="./images/photo-1526509867162-5b0c0d1b4b33.jpg" alt="" class="slider_img_services">
+						</div>
+						<div class="slider_section_services">
+							<img src="./images/PS3img1.jpg" alt="" class="slider_img_services">
+						</div>
+						<div class="slider_section_services">
+							<img src="./images/PS3img2.jpg" alt="" class="slider_img_services">
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<script>
+				const sliderPS3 = document.querySelector("#slider_services");
+				let sliderSectionPS3 = document.querySelectorAll(".slider_section_services");
+				let sliderSectionLastPS3 = sliderSectionPS3[sliderSectionPS3.length -1];
+				
+				sliderPS3.insertAdjacentElement('afterbegin', sliderSectionLastPS3);
+				
+				function NextPS3(){
+					let sliderSectionFirstPS3 = document.querySelectorAll(".slider_section_services")[0];
+					sliderPS3.style.marginLeft = "-200%";
+					sliderPS3.style.transition = "all 4.5s";
+					setTimeout(function(){
+						sliderPS3.style.transition = "none";
+						sliderPS3.insertAdjacentElement('beforeend', sliderSectionFirstPS3);
+						sliderPS3.style.marginLeft = "-100%";
+					}, 4500);
+				}
+				setInterval(function(){
+					NextPS3();
+				}, 20000);
+			</script>
+			<!------------------------------------------------------------------------------------------->
+			<!----------------------------------------PS3 SERVICE---------------------------------------->
+			<!------------------------------------------------------------------------------------------->
+		
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------SSD UPDATE SERVICE---------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+			<div class="element_B_container common_grid">
+				<div class="element_B_left">
+					<div class="element_B_tittle PC_service">
+						¿PC lenta?
+					</div>
+					<div class="element_B_description_text">
+						Instale ahora mismo su disco SSD e incremente la velocidad de su equipo.
+					</div>
+					<img src="./images/HDD_vs_SSD.png" alt="" class="element_B_img">
+
+					<a href="Servicios\actualizacion ssd.html" class="services_button_element_B services_center_button">SABER MÁS</a>
+				</div>
+
+				<div class="element_B_right">
+					<div class="element_B_tittle_2">
+						Servicios de soporte adicionales
+						<ul>
+							<li> <a href="Servicios\mantenimiento preventivo.html" class="pc_services"> <img src="./images/limpiar.png" alt="" class="clean_pc">LIMPIEZA</a> </li>
+							
+							<li> <a href="Servicios\formateo.html" class="pc_services"> <img src="./images/eraser.png" alt="" class="clean_pc">FORMATEO</a></li>
+							
+							<li> <a href="Servicios\algo mas.html" class="pc_services"> <img src="./images/faq.png" alt="" class="clean_pc">ALGO MÁS</a> </li>
+							
+						</ul>
+					</div>
+					<div class="element_B_description_2">
+						
+					</div>
+				</div>
+
+			</div>
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------SSD UPDATE SERVICE---------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------PS2 SERVICE----------------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+			<div class="element_A_container">
+				<div>
+					<img src="./images/PS2-Facebook.jpg" alt="" class="element_A_img">
+				</div>
+				
+				<div class="PS2_txtarea">
+					<div class="element_A_tittle">
+						<!--LISTO PA UN TITULO-->
+							LIBERACIÓN PS2
+					</div>
+					<div class="element_A_description">
+						¡Elegí hasta 60 de tus juegos favoritos de tu PS2!
+					</div>
+					<a href="Servicios\ps2.html" class="services_grid_button services_button_element_A">SABER MÁS</a>
+				</div>
+
+			</div>
+			<!------------------------------------------------------------------------------------------->
+			<!----------------------------------------PS2 SERVICE---------------------------------------->
+			<!------------------------------------------------------------------------------------------->
+
+			<!-------------------------------------------------------------------------------------------->
+			<!-----------------------------------------------WII SERVICE---------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+			<div class="element_B_container">
+				<div class="element_B_tittle Wii_tittle">
+					Liberación de Nintendo Wii
+				</div>
+				<img src="images\WII.png" alt="" class="element_B_img">
+				<div class="element_B_description_text">
+					Elegí tus juegos favoritos de Wii, ven a conocer nuestros planes.
+				</div>
+				<a href="Servicios\wii.html" class="services_button_element_B services_center_button">SABER MÁS</a>
+			</div>
+			<!-------------------------------------------------------------------------------------------->
+			<!----------------------------------------WII SERVICE----------------------------------------->
+			<!-------------------------------------------------------------------------------------------->
+			
+			<!------------------------------------------------------------------------->
+			<!---------------------------END OF THE CONTENT---------------------------->
+			<!------------------------------------------------------------------------->
+			<script src="./js/animations_responsive.js"></script>
+		</div>
+	</body>
+</html>
