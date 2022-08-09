@@ -1,0 +1,2397 @@
+/*VARIABLES*/
+:root{
+    --dark:#14171d;
+    --darkx:#1d2027;
+    --ElColorFresa: #020c1b;
+    --ElColorFresisima: #0a192f;
+}
+body{
+    font-family: Gibson;
+    background-color: var(--dark);
+}
+*{
+    box-sizing: border-box;
+}
+.justify_text{
+    text-align: justify;
+}
+.justify_right{
+    float: right;
+    text-align: right;
+}
+.center_text{
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------The Welcome Screen--------------------------------*/
+/*-----------------------------------------------------------------------*/
+.welcome{
+   background-color:var(--ElColorFresa);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top:0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 21;
+   transition: 1s ease-in-out;
+}
+.logoWelcome{
+    display: block;
+    margin: 15% auto auto auto;
+}
+#carga_pagina{
+    background-color: var(--ElColorFresa);
+    border: 15px solid #81439A;
+    border-top-color: #F7DC6F;
+    border-top-style:groove;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 21;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+@keyframes girar{
+    girar   {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+/*-----------------------------------------------------------------------*/
+/*----------------------The common header--------------------------------*/
+/*-----------------------------------------------------------------------*/
+.header{
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    background:#000;
+    position: fixed;
+    overflow: hidden;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+.container-header{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo{
+    float: left;
+}
+.logo_1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.menu{
+    float: right;
+    line-height: 75px;
+    transition: 1s ease-in-out;
+    margin-right: 20px;
+}
+.menu a{
+    font-family:Gibson;
+    color:#B491C2;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    transition: all 500ms ease;
+}
+.menu a:hover{
+    color: #ffff;
+    transform: scale(1.2);
+}		
+.facebook{
+	height: 25px;
+	width: 25px;
+	background: url(../images/img-sprite.png)no-repeat -256px -276px;
+	padding: 5px;
+}
+.instagram{
+	height: 25px;
+	width: 25px;
+	background: url(../images/img-sprite.png)no-repeat -346px -276px;
+	padding: 5px;
+}
+/*Las barritas que despliegan el menu*/
+.toggle{
+    float: right;
+    line-height: 75px;
+    transition: 1s ease-in-out;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 23;
+}.toggle span{
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #1863ff;
+    border-radius: 4px;
+    transition: 0.5s;
+}.toggle span:nth-child(1){
+    transform: translateY(-15px);
+    width: 18px;
+    right: 15px;
+}.toggle.active span:nth-child(1){
+    width: 25px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+.toggle span:nth-child(2){
+    transform: translateY(15px);
+    width: 16px;
+    right: 15px;
+}.toggle.active span:nth-child(2){
+    width: 25px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+.toggle.active span:nth-child(3){
+    transform: translateX(60px);
+}
+/*El menu en cuestion*/
+.container_toggle_bar{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 22;
+}.container_toggle_bar.active{
+    transition: all 500ms ease;
+    visibility: visible;
+    opacity: 1;
+}
+.cont_toggle_bar{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 500ms ease;
+    z-index: 22;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}.cont_toggle_bar.active{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}.cont_toggle_bar nav{
+    transform: rotateY(15%);
+}.cont_toggle_bar nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffff;
+    border-left: 5px solid transparent ;
+    transition: all 400ms ease;
+}.cont_toggle_bar nav a:hover{
+    cursor: pointer;
+    border-left: #1863ff;
+    background: #1f1f1f;
+}
+
+/*MENU TOGGLE DEL SSD*/
+/*Las barritas que despliegan el SSD SERVICE*/
+.toggle_ssd_options{
+    float: right;
+    line-height: 75px;
+    transition: 1s ease-in-out;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 19;
+}.toggle_ssd_options span{
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #1863ff;
+    border-radius: 4px;
+    transition: 0.5s;
+}.toggle_ssd_options span:nth-child(1){
+    transform: translateY(-15px);
+    width: 18px;
+    right: 15px;
+}.toggle_ssd_options.active span:nth-child(1){
+    width: 25px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+.toggle_ssd_options span:nth-child(2){
+    transform: translateY(15px);
+    width: 16px;
+    right: 15px;
+}.toggle_ssd_options.active span:nth-child(2){
+    width: 25px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+.toggle_ssd_options.active span:nth-child(3){
+    transform: translateX(60px);
+}
+.container_toggle_bar_ssd{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    right: 0;
+    transition: all 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 18;
+    border-radius: 15px 0px 0px 15px;
+}.container_toggle_bar_ssd.active{
+    transition: all 500ms ease;
+    visibility: visible;
+    opacity: 1;
+}
+.cont_toggle_bar_ssd{
+    width: 100%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 250px;
+    background: #1c1c1c;
+    top: 0;
+    right: 0;
+    transition: all 500ms ease;
+    z-index: 18;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    border-radius: 15px 0px 0px 15px;
+}.cont_toggle_bar_ssd.active{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}.cont_toggle_bar_ssd nav{
+    transform: rotateY(15%);
+}.cont_toggle_bar_ssd nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffff;
+    border-left: 5px solid transparent ;
+    transition: all 400ms ease;
+}.cont_toggle_bar_ssd nav a:hover{
+    cursor: pointer;
+    border-left: #1863ff;
+    background: #1f1f1f;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------INDEX--------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+.whole_body{
+ max-width: 1366px;
+ margin: auto;
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------CONTAINER DE EL TÍTULO---------------------------*/
+/*-----------------------------------------------------------------------*/
+#SPECT-container{
+    max-width: 600px;
+}
+.SPECT_tittle{
+    background-color:var(--darkx);
+    margin-top: 10%;
+    max-width: 600px;
+    transition: 1s ease-in-out;
+    font-family:BebasNeue-Regular;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+    width: 0px;
+    position: absolute;
+    z-index: 10;
+    box-sizing: border-box;
+}
+.SPECT_tittle_txt h1{
+    width: 100%;
+    font-family:Gibson-Bold;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.SPECT_tittle_txt{
+    width: 100%;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    color: #ffff;
+    font-size: 45px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------SLIDERS AK7--------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.container-slider{
+    width: 90%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    height: 727px;
+}
+.slider{
+    display: flex;
+    width: 400%;/*CADA IMAGEN EQUIVALE A UN 100%*/
+    height: 400px;
+    margin-left: -100%;
+}
+.slider__section{
+    margin-top:100px;
+    width: 100%;
+    height: 150%;
+}
+
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*-----------------------------------------------------------------------*/
+/*----------------------BODY CONTAINER- ELEMENTS-------------------------*/
+/*-----------------------------------------------------------------------*/
+.body_container{
+    /*Hola estoy libre*/
+    height: 100%;
+    min-height: 400px;
+}
+
+.titulo{
+    font-family:Gibson-Bold;
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #e9e2da;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+/*--------------------------ELEMENT (A)-------------------------------*/
+.Sector_A{
+    background-color: #cedbe3;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    align-items: center;
+}
+.A_element{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.A_tittle{
+    font-family:Gibson-Bold;
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 100%;
+}.A_element p{
+    font-size: 20px;
+    margin-top: 8px;
+}
+.A_image{
+    object-fit: cover;
+    width: 25%;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+.button_center{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 10%;
+    transition: all 500ms ease;
+}
+.A_element_button{
+    margin-top: 10px;
+    color: #ffff;
+    background-color: black;
+    font-weight: bold;
+    font-family:Gibson-Bold;
+}
+/*--------------------------ELEMENT (B)-------------------------------*/
+.Sector_B{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    width: 100%;
+}
+.B_element{
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.B_tittle{
+    font-family:Gibson-Bold;
+    color: #ffff;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 100%;
+}.B_element p{
+    font-size: 20px;
+    margin-top: 8px;
+}
+.B_image{
+    border-radius: 15px;
+    object-fit: cover;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    margin: auto;
+}
+.B_element_button{
+    margin-top: 20px;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+    font-family:Gibson-Bold;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------PRODUCTOS----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.element_B_right_Batocera{
+    grid-column: 4/5;
+    position: absolute;
+    right: 0;
+}
+.element_B_tittle_2_Batocera{
+    color: #ffff;
+    background-color:var(--ElColorFresa);
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+}.element_B_tittle_2_Batocera ul li{
+    list-style:none;
+    text-decoration: none;
+}.element_B_tittle_2_Batocera ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}.element_B_tittle_2_Batocera a:hover{
+    transform: scale(1.2);
+    transition: all 250ms ease;
+    color: #FFFF;
+}
+
+.Batocera_game_list_mobile_container{
+    margin: 20px auto 40px auto;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.element_B_tittle_2_Batocera_mobile{
+    color: #ffff;
+    background-color:var(--ElColorFresa);
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+}.element_B_tittle_2_Batocera_mobile li {
+    margin: 8px auto 8px auto;
+}
+.element_B_tittle_2_Batocera_mobile ul li{
+    list-style:none;
+    text-decoration: none;
+}.element_B_tittle_2_Batocera_mobile ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}.element_B_tittle_2_Batocera_mobile a:hover{
+    transform: scale(1.2);
+    transition: all 250ms ease;
+    color: #FFFF;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------SERVICIOS----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+.services_grid_button{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    transition: all 500ms ease;
+}
+.services_button_element_A{
+    margin-top: 10px;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+}
+.services_button_element_B{
+    margin-top: 10px;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+}
+.services_center_button{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 15%;
+    transition: all 500ms ease;
+}
+.servicio_titulo{
+    font-family: Gibson-Bold;
+    margin: 120px auto auto auto;
+    color: #ffff;
+    text-align: center;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+    width: 600px;
+    border-radius: 7px;
+}
+/*-----------------------------------------------------------------------*/
+/*----------------------CONTAINER DE EL TÍTULO DE SERVICIOS--------------*/
+/*-----------------------------------------------------------------------*/
+#SPECT_container_servicios{
+    height: 100%;
+}
+.SPECT_tittle_servicios{
+    background-color:var(--darkx);
+    margin-top: 10%;
+    transition: 1s ease-in-out;
+    font-family:BebasNeue-Regular;
+    padding: 20px;
+    border-radius: 15px 0px 0px 15px;
+    width: 0px;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+}.SPECT_tittle_txt_servicios{
+    opacity: 0;
+    transition: 2s ease-in-out;
+    color: #ffff;
+    font-size: 45px;
+}.SPECT_tittle_txt_servicios h1{
+    font-family:Gibson-Bold;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 0px;
+}
+.services_banner{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20PX;
+}
+/*---------------------------TITULO----------------------------------*/
+.titulo_services{
+    font-family:Gibson-Bold;
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #e9e2da;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+/*---------------------------CREACIÓN DE PÁGINAS WEB----------------------------------*/
+.element_A_container_WEBPAGE{
+    background-color: #CAD3E6;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.element_A_container_WEBPAGE a:hover{
+    color: #81439A;
+    background-color: black;
+}
+.element_A_imgarea_WEBPAGE{
+    grid-column: 2/4;
+}
+.element_A_tittle_WEBPAGE{
+    margin-top: 30px;
+    font-family:Gibson-Bold;
+    color: #ffff;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 19;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.element_A_description_WEBPAGE{
+    font-size: 18px;
+    color: white;
+    background-color:var(--ElColorFresa);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 550px;
+    display: block;
+    margin: 15px auto auto auto;
+}
+
+/*-----------------------------DENTRO DE CREACIÓN DE PÁGINA WEB-----------------------------------*/
+
+/*SLIDER*/
+.container_slider_web_page{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 900px;
+    grid-column: 2/4;
+    overflow: hidden;
+}
+.slider_web{
+    display: flex;
+    width: 400%; /*Cambiar en caso de agregra más imágenes sumar a este número; 400% = 4 imágenes*/
+    height: 400px;
+}
+.slider_web_section{
+ width: 100%;
+}
+.slider_web_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*SLIDER*/
+
+/*---------------------------DISEÑO GRÁFICO----------------------------------------*/
+.graphic_design{
+    width: 40%;
+    text-align: center;
+}
+
+/*-----------------------------LIBERACIÓN DE PS3-----------------------------------*/
+.element_A_container{
+    background-color: #CAD3E6;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.element_A_container a:hover{
+    color: #81439A;
+    background-color: black;
+}
+
+/*SLIDER*/
+.container_slider_services{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.slider_services{
+    display: flex;
+    width: 300%; /*CADA IMAGEN EQUIVALE A UN 100%*/
+    height: 400px;
+    margin-left: -100%;
+}
+.slider_section_services{
+    width: 100%;
+}
+.slider_img_services{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*SLIDER*/
+
+.PS3_txtarea_1{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    padding: 20px;
+}
+.PS3_txtarea_2{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    padding: 20px;
+}
+
+.element_A_tittle{
+    grid-row: 2/4;
+    font-family:Gibson-Bold;
+    color: #ffff;
+    background-color: black;
+    width: 60%;
+    border-radius: 7px;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 19;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.element_A_description{
+    grid-row: 3/4;
+    font-size: 18px;
+    color: white;
+    background-color:var(--ElColorFresa);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+/*-----------------------------DENTRO DE LIBERACIÓN DE PS3-----------------------------------*/
+.container_servicio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.imagen_service{
+    width:500px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    grid-column: 2/4;
+    display: block;
+    margin: 20px auto auto auto;
+}
+.descripcion{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+    grid-column: 2/4;
+}
+.go_back{
+    margin: 20px;
+ }.go_back a{
+    color: #FFFF;
+    background-color: #000;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: all ease 500ms;
+ }.go_back a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+ }
+
+.titulo_links_contacto{
+    background-color: #000;
+    width: auto;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 7px;
+}
+.links_contacto_servicio{
+    display: grid;
+    grid-template-columns: repeat(9 ,1fr);
+    color: #ffff;
+    border-radius: 20px;
+    height: 115px;
+}
+.link_servicio a{
+    color: #FFFF;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    transition: .1s;
+    width: 120px;
+    margin-top: 20px;
+    border:1px solid #B491C2;
+    border-radius: 5px;
+    text-align: center;
+}
+.link_servicio a:hover{
+    font-weight: bolder;
+    color: black;
+    transform: scale(1.1);
+    background-color: #e2c4ee;
+}
+.link_correo{
+    grid-column: 4/5;
+    background: #000;
+    border-radius: 0px 0px 0px 15px;
+}
+.correo_img{
+    width: 40px;
+    margin: 7px;
+}
+.link_whatsapp{
+    grid-column: 5/6;
+    background: #000;
+    border-radius: 0px 0px 0px 0px;
+}
+.whatsapp_img{
+    width: 40px;
+    margin: 7px;
+}
+
+.link_messenger{
+    grid-column: 6/7;
+    background: #000;
+    border-radius: 0px 0px 15px 0px;
+}
+.messenger_img{
+    width: 40px;
+    margin: 7px;
+}
+
+/*---------------------------SERVICIO A COMPUTADORAS----------------------------------*/
+.common_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.element_B_left{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.element_B_container{
+    background-color: var(--darkx);
+    margin-top: 20px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.element_B_container a:hover{
+    color: #ffff;
+    background-color: #81439A;
+}
+.element_B_tittle{
+    font-family:Gibson-Bold;
+    color: #ffff;
+    background-color:var(--ElColorFresa);
+    border-radius: 7px;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+.element_B_description_text{
+    color: #ffff;
+    background-color:var(--ElColorFresa);
+    font-size: 20px;
+    border-radius: 15px;
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.element_B_img{
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+.PC_service{
+    width: 40%;
+    text-align: center;
+}
+.element_B_right{
+    grid-column: 4/5;
+    position: absolute;
+    right: 0;
+}
+.element_B_right_responsive{
+    grid-column: 3/5;
+    right: 0;
+    visibility: hidden;
+    grid-row: 1/2;
+}
+.element_B_tittle_2{
+    color: #ffff;
+    background-color:var(--ElColorFresa);
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+}
+.element_B_tittle_2 ul li
+{
+    list-style:none;
+    text-decoration: none;
+}
+.element_B_tittle_2 ul li a
+{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+.element_B_tittle_2 a:hover
+{
+    transform: scale(1.2);
+    transition: all 250ms ease;
+    color: #FFFF;
+}
+.pc_services:hover img{
+    transition: all 300ms ease;
+    margin-left: -90px;
+}
+.clean_pc{
+    color:#FFFF;
+    width: 40px;
+    padding-right: 10PX;
+}
+
+/*-----------------------------Ya dentro del link de PC LIMPIEZA-----------------------------------*/
+.servicio_titulo_pc_limpieza{
+    font-family: Gibson-Bold;
+    margin: 120px auto auto auto;
+    color: #ffff;
+    text-align: center;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+    width: 700px;
+    border-radius: 7px;
+}
+.container_servicio_limpieza_pc{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.imagen_servicio_limpieza_pc{
+    width:500px;
+    display: block;
+    margin:auto;
+    grid-column: 2/4;
+}
+
+.descripcion_pc_mantenimiento{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+    grid-column: 2/4;
+}
+
+/*-----------------------------Ya dentro del link de PC FORMATEO-----------------------------------*/
+.servicio_titulo_pc_formateo{
+    font-family: Gibson-Bold;
+    margin: 120px auto auto auto;
+    color: #ffff;
+    text-align: center;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+    width: 700px;
+    border-radius: 7px;
+}
+
+.container_servicio_formateo_pc{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.descripcion_pc_formateo{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+    grid-column: 2/4;
+    text-align: justify;
+}.descripcion_pc_formateo h1{
+    text-align: center;
+}
+
+.imagen_servicio_formateo_pc{
+    width:550px;
+    display: block;
+    margin:auto auto 15px auto;
+}
+
+/*-----------------------------Ya dentro del link de PC ALGO MÁS-----------------------------------*/
+.servicio_titulo_pc_algo_mas{
+    font-family: Gibson-Bold;
+    margin: 120px auto auto auto;
+    color: #ffff;
+    text-align: center;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+    width: 650px;
+    border-radius: 7px;
+}
+
+.container_servicio_algo_mas{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.descripcion_pc_algo_mas{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+    grid-column: 2/4;
+    text-align: justify;
+}.descripcion_pc_algo_mas h1{
+    text-align: center;
+}
+
+.imagen_servicio_algo_mas{
+    width:400px;
+    display: block;
+    margin:auto auto 15px auto;
+    grid-column: 2/4;
+}
+
+/*-----------------------------Ya dentro del link de SSD UPGRADE-----------------------------------*/
+.servicio_titulo_ssd_upgrade{
+    font-family: Gibson-Bold;
+    margin: 120px auto auto auto;
+    color: #ffff;
+    text-align: center;
+    color: black;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+    width: 650px;
+    border-radius: 7px;
+}
+.container_servicio_ssd_upgrade{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.descripcion_pc_ssd_upgrade{
+    color: #fff;
+    font-size: 20px;
+    margin: 30px;
+    grid-column: 2/4;
+    text-align: justify;
+}.descripcion_pc_ssd_upgrade h1{
+    text-align: center;
+}
+.imagen_servicio_pc_ssd_upgrade{
+    width:400px;
+    display: block;
+    margin:auto;
+    grid-column: 2/4;
+}
+
+/*---------------------------PS2------------------------------------*/
+.PS2_txtarea_1{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    padding: 20px;
+}
+.PS2_txtarea_2{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    padding: 20px;
+}
+.element_A_img_PS2{
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    grid-column: 2/3;
+    grid-row: 2/4;
+    display: block;
+    margin: auto;
+}
+
+.element_A_tittle{
+    grid-row: 2/4;
+    font-family:Gibson-Bold;
+    color: #ffff;
+    background-color: black;
+    width: 60%;
+    border-radius: 7px;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 19;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.element_A_description{
+    grid-row: 3/4;
+    font-size: 18px;
+    color: white;
+    background-color:var(--ElColorFresa);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.element_A_img{
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    grid-column: 1/2;
+    display: block;
+    margin: auto;
+}
+/*---------------------------WII------------------------------------*/
+.Wii_tittle{
+    width: 55%;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------CONTACTENOS--------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+#SPECT_container_contacto{
+    max-width: 600px;
+}
+.SPECT_tittle_contacto{
+    background-color:var(--darkx);
+    margin-top: 10%;
+    max-width: 600px;
+    transition: 1s ease-in-out;
+    font-family:BebasNeue-Regular;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+    width: 0px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}.SPECT_tittle_txt_contacto{
+    opacity: 0;
+    transition: 2s ease-in-out;
+    color: #ffff;
+    font-size: 45px;
+ }.SPECT_tittle_txt_contacto h1{
+    font-family:Gibson-Bold;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 0px;
+ }
+
+ .body_container_contact_us{
+    max-width: 1366px;
+    background: var(--dark);
+    margin: auto;
+}
+
+.contactus_contenedor{
+    margin: 100px 50px 50px 50px ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #303C54;
+}
+.contactus_contenedor_b{
+    margin: 100px 50px 50px 50px ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #303C54;
+}
+
+.about_us_info{
+    grid-column: 1/3;
+    background: #B29FBB;
+    padding: 70px;
+    color: #000;
+    border-radius: 0 80px 80px 0;
+}.about_us_info h1{
+    display: block;
+    margin: auto;
+    background: #000;
+    border-radius: 7px;
+    width: 450px;
+    padding: 11px;
+    text-align: center;
+    color: #ffff;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}.photo{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.contactus_form{
+    grid-column: 3/5;
+    background: #303C54;
+    color:white;
+    padding: 70px;
+ }.contactus_form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }.contactus_form form .block{
+    grid-column: 1/3;
+ }.contactus_form form p{
+    margin: 0;
+    padding: 1em;
+ }.contactus_form form button,
+  .contactus_form form input,
+  .contactus_form form textarea{
+    width: 100%;
+    padding: .7em;
+    border:none;
+    background: none;
+    border-bottom: 1px solid #B29FBB;
+    outline: none;
+    color: #ffff;
+ }.contactus_form form button{
+    background: #B29FBB;
+    border: 0;
+    text-transform: uppercase;
+    color: #000;
+    grid-column: 1/3;
+    font-weight: bolder;
+    transition: all 1000ms ease;
+ }.contactus_form form button:hover{
+    background: #000;
+    color: #ffff;
+    transition: all 500ms ease;
+ }.contactus_form h1{
+    display: block;
+    margin: auto;
+    background: #ffff;
+    border-radius: 7px;
+    width: 450px;
+    padding: 11px;
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+    margin-bottom: 10px;
+ }
+
+.contactus_contenedor_seccion_A{
+    background: #B29FBB;
+    color: #000;
+    padding: 70px;
+    border-radius: 20px;
+    border-radius: 80px 0 0 80px;
+    grid-column: 3/5;
+}
+.contactus_contenedor_seccion_A h1{
+    display: block;
+    margin: auto;
+    background: #000;
+    border-radius: 7px;
+    width: 450px;
+    padding: 11px;
+    text-align: center;
+    color: #ffff;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.contactus_contenedor_seccion_B{
+    background: #303C54;
+    color: #ffff;
+    border-radius: 20px;
+    margin: 20px;
+    grid-column: 1/3;
+}
+.contactanos{
+    width: 60%;
+    display: block;
+    margin:auto;
+}
+.contactanos ul li {
+    list-style: none;
+}
+.contactanos ul li a{
+    color: #FFFF;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    transition: .1s;
+    width: 70%;
+    margin-top: 20px;
+    border:1px solid #B29FBB;
+    border-radius: 5px;
+    text-align: center;
+}
+.contactanos ul li a:hover{
+    font-weight: bolder;
+    color: black;
+    transform: scale(1.1);
+    background-color: #662483;
+}
+.contact_us{
+    width: 40px;
+    margin: 7px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------SITIO WEB RESPONSIVE-----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+.contenedor_general{
+    width: 100%;
+    max-width: 2000px;
+}
+
+/*---------------------------------1290 WIDTH-------------------------*/
+@media screen and (max-width: 1290px){
+    
+    .button_center{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 15%;
+        transition: all 500ms ease;
+    }
+
+    .A_element_button{
+        margin-top: 10px;
+        color: #ffff;
+        background-color: black;
+        font-weight: bold;
+        font-family:Gibson-Bold;
+    }
+
+    /*SERVICES*/
+    /*PRODUCTS*/
+
+    /*SERVICES*/
+    /*WEBPAGE*/
+    .element_A_imgarea_WEBPAGE{
+        grid-column: 1/5;
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .element_A_tittle_WEBPAGE{
+        margin-top: 30px;
+        font-family:Gibson-Bold;
+        color: #ffff;
+        background-color: black;
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+        font-size: 40px;
+        font-weight: bold;
+        z-index: 19;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /*GRAPHIC DESIGN*/
+    .element_B_tittle{
+        font-family:Gibson-Bold;
+        color: #ffff;
+        background-color:var(--ElColorFresa);
+        padding: 10px;
+        border-radius: 7px;
+        font-size: 40px;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+    }
+    .element_B_description_text{
+        color: #ffff;
+        background-color:var(--ElColorFresa);
+        font-size: 18px;
+        border-radius: 15px;
+        width: 30%;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+    .element_B_img{
+        display: block;
+        margin: auto;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        width: 55%;
+    }
+
+    /*PS3 SERVICE*/
+    .element_A_tittle{
+        width: 65%;
+    }
+
+    /*CONTACT US*/
+    /*Description*/
+    .about_us_info{
+        padding: 50px;
+    }.about_us_info h1{
+        width: 80%;
+    }.photo{
+        width: 90%;
+    }
+
+    /*Form*/
+    .contactus_form{
+        padding: 50px;
+    }
+    .contactus_form h1{
+        width: 80%;
+    }
+}
+
+/*---------------------------------1090 WIDTH-------------------------*/
+@media screen and (max-width: 1090px){
+
+    /*THE FLOATING TITTLE INDEX*/
+    .SPECT_tittle{
+        margin-top: 15%;
+    }.SPECT_tittle_txt h1{
+        font-size: 70px;
+    }.SPECT_tittle_txt{
+        font-size: 30px;
+    }
+
+    /*THE FLOATING TITTLE SERVICES*/
+    .SPECT_tittle_servicios{
+        margin-top: 15%;
+    }.SPECT_tittle_txt_servicios h1{
+        font-size: 70px;
+    }.SPECT_tittle_txt_servicios{
+        font-size: 30px;
+    }
+
+    /*THE FLOATING TITTLE CONTACT US*/
+    .SPECT_tittle_contacto{
+        margin-top: 15%;
+    }
+    .SPECT_tittle_txt_contacto h1{
+        font-size: 70px;
+    }
+    .SPECT_tittle_txt_contacto{
+        font-size: 30px;
+    }
+
+    /*-----------PRODUCTS-----------*/
+    /*BATOCERA*/
+    .servicio_titulo{
+        width: 70%;
+    }
+    .element_B_right_Batocera{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .Batocera_game_list_mobile_container{
+        margin: 20px auto 40px auto;
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    .titulo_links_contacto{
+        font-size: 50px;
+    }
+    .links_contacto_servicio {
+        grid-template-columns: repeat(8 ,1fr);
+        height: 120px;
+    }
+    .link_correo {
+        grid-column: 2/4;
+    }
+    .link_whatsapp {
+        grid-column: 4/6;
+    }
+    .link_messenger {
+        grid-column: 6/8;
+    }
+    .go_back{
+        margin: 40px auto 30px auto;
+    }
+
+    /*-----------SERVICES-----------*/
+
+    /*GRAPHIC DESIGN*/
+    .graphic_design{
+        width: 60%;
+        text-align: center;
+    }
+
+    /*PS3 SERVICE*/
+
+    .element_A_container{
+        margin-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+        grid-template-rows: 1fr;
+    }
+    /*ABOUT US*/
+    .about_us_info{
+        padding: 30px;
+    }
+    .contactus_form{
+        padding: 30px;
+    }
+    .contactus_form h1{
+        width: 90%;
+    }
+
+    .contactus_contenedor_seccion_A h1{
+        width: 100%;
+    }
+    .contactanos{
+        width: 80%;
+    }
+}
+
+/*---------------------------------900 WIDTH-------------------------*/
+@media screen and (max-width: 900px){
+    
+    .button_center{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 20%;
+        transition: all 500ms ease;
+    }
+
+    .A_element_button{
+        margin-top: 10px;
+        color: #ffff;
+        background-color: black;
+        font-weight: bold;
+        font-family:Gibson-Bold;
+    }
+
+    /*-----------SERVICES-----------*/
+    /*PS3 SERVICE*/
+    .services_grid_button{
+        width: 60%;
+    }
+    .element_A_tittle{
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    /*SSD SERVICE*/
+    .element_B_right{
+        visibility: hidden;
+        display: none;
+        transition: 1s ease-in-out;
+    }
+    .element_B_right_responsive{
+        visibility:visible;
+    }
+    .toggle_ssd_options{
+        opacity: 1;
+    }
+
+    /*PS2 Service*/
+    .PS2_txtarea_1 {
+        grid-row: 2/3;
+    }
+    .PS2_txtarea_2 {
+        grid-row: 3/4;
+    }
+
+    /*-----------PRODUCTS-----------*/
+    /*BATOCERA*/
+    .servicio_titulo{
+        width: 70%;
+        padding: 5px;
+    }
+    .imagen_service{
+        width:70%;
+        grid-column: 1/5;
+    }
+    .descripcion{
+        font-size: 20px;
+        margin: 5% 10% 5% 10%;
+        grid-column: 1/5;
+    }
+
+    /*-----------ABOUT US-----------*/
+    .about_us_info{
+        padding: 20px;
+    }
+    .contactus_form{
+        padding: 20px;
+    }
+
+    .contactus_contenedor_seccion_A{
+        padding: 50px;
+    }
+    .contactus_contenedor_seccion_A h1{
+        width: 80%;
+    }
+    .contactanos{
+        width: 90%;
+    }
+}
+
+/*---------------------------------815 WIDTH-------------------------*/
+@media screen and (max-width: 815px){
+
+    /*THE FLOATING TITTLE INDEX*/
+    .SPECT_tittle{
+        margin-top: 30%;
+    }.SPECT_tittle_txt h1{
+        font-size: 60px;
+    }.SPECT_tittle_txt{
+        font-size: 27px;
+    }
+
+    /*THE FLOATING TITTLE SERVICES*/
+    .SPECT_tittle_servicios{
+        margin-top: 30%;
+    }.SPECT_tittle_txt_servicios h1{
+        font-size: 60px;
+    }.SPECT_tittle_txt_servicios{
+        font-size: 27px;
+    }
+
+    /*THE FLOATING TITTLE CONTACT US*/
+    .SPECT_tittle_contacto{
+        margin-top: 30%;
+    }
+    .SPECT_tittle_txt_contacto h1{
+        font-size: 60px;
+    }
+    .SPECT_tittle_txt_contacto{
+        font-size: 27px;
+    }
+
+    /*INDEX*/
+    .titulo{
+        font-family:Gibson-Bold;
+        color: black;
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+        background-color: #e9e2da;
+        border-radius: 15px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /*SERVICES*/
+    .titulo_services{
+        font-family:Gibson-Bold;
+        color: black;
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+        background-color: #e9e2da;
+        border-radius: 15px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    /*WEBPAGE*/
+    .element_A_imgarea_WEBPAGE{
+        grid-column: 1/5;
+        width: 80%;
+        display: block;
+        margin: auto;
+    } 
+
+    /*GRAPHIC DESIGN*/
+    .graphic_design{
+        width: 70%;
+    }
+    .element_B_description_text{
+        width: 40%;
+    }
+    .element_B_img{
+        width: 65%;
+    }
+    .services_center_button{
+        width: 25%;
+    }
+
+    /*PS3 SERVICE*/
+    .element_A_tittle{
+        width: 100%;
+    }
+    .container_slider_services{
+        width: 90%;
+    }
+
+    /*PS2 Service*/
+    .element_A_img_PS2 {
+        grid-row: 1/4; 
+    }
+
+    /*ABOUT US*/
+    .contactus_contenedor{
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .about_us_info{
+        grid-column: 1/5;
+        grid-row: 1/3;
+        padding: 50px;
+        border-radius:0 0 80px 80px;
+    }
+    .about_us_info h1{
+        width: 80%;
+    }
+    .photo{
+        width: 60%;
+    }
+    .contactus_form{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding: 50px;
+    }
+    .contactus_form h1{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contactus_contenedor_b{
+        background: #B29FBB;
+    }
+    .contactus_contenedor_seccion_A{
+        background: #303C54;
+        color: #ffff;
+        border-radius:0 0 80px 80px;
+        grid-column: 1/5;
+        grid-row: 1/3;
+        text-align: center;
+    }
+    .contactus_contenedor_seccion_A h1{
+        width: 90%;
+    }
+    .contactus_contenedor_seccion_B{
+        background: #B29FBB;
+        color: #ffff;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        grid-column: 1/5;
+        grid-row: 3/5;
+    }
+    .contactanos{
+        width: 100%;
+    }
+    .contactanos ul li a{
+        color: #000000;
+        width: 60%;
+        border:1px solid #303C54;
+    }
+}
+/*---------------------------------720 WIDTH-------------------------*/
+@media screen and (max-width: 720px){
+    /*SERVICES*/
+    /*WEBPAGE*/
+    .element_A_container_WEBPAGE{
+        background-color: #CAD3E6;
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .element_A_imgarea_WEBPAGE{
+        grid-column: 1/5;
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .element_A_description_WEBPAGE{
+        font-size: 18px;
+        color: white;
+        background-color:var(--ElColorFresa);
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        width: 75%;
+        display: block;
+        margin: 15px auto auto auto;
+    }
+    /*PC SERVICE*/
+    .PC_service{
+        width: 60%;
+    }
+
+    /*PS2 Service*/
+    .element_A_img_PS2 {
+        width: 100%;
+    }
+}
+/*---------------------------------615 WIDTH-------------------------*/
+@media screen and (max-width: 615px){
+    /*MENU BAR DISPLAY*/
+    .menu{
+        opacity: 0;
+        transition: 1s ease-in-out;
+        display: none;
+    }
+    .toggle{
+        opacity: 1;
+    }
+    
+    /*-----------SERVICES-----------*/
+    .titulo_services{
+        font-family:Gibson-Bold;
+        color: black;
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+        background-color: #e9e2da;
+        border-radius: 15px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /*WEBPAGE*/
+    .element_A_imgarea_WEBPAGE{
+        grid-column: 1/5;
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+    .element_A_tittle_WEBPAGE{
+        margin-top: 30px;
+        font-family:Gibson-Bold;
+        color: #ffff;
+        background-color: black;
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+        font-size: 35px;
+        font-weight: bold;
+        z-index: 19;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .element_A_description_WEBPAGE{
+        font-size: 18px;
+        color: white;
+        background-color:var(--ElColorFresa);
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        width: 75%;
+        display: block;
+        margin: 15px auto auto auto;
+    }
+    
+    /*GRAPHIC DESIGN*/
+    .graphic_design{
+        width: 90%;
+    }
+    .element_B_description_text{
+        width: 50%;
+    }
+    .element_B_img{
+        width: 80%;
+    }
+    .services_center_button{
+        width: 25%;
+    }
+
+    /*PS3 SERVICE*/
+    .element_A_container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .PS3_txtarea_1{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .PS3_txtarea_2{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .element_A_tittle{
+        width: 80%;
+    }
+    .services_grid_button{
+        width: 40%;
+    }
+    .services_button_element_A{
+        font-size: 16px;
+    }
+    /*SLIDER*/
+    .container_slider_services{
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+
+    /*PS2 Service*/
+    .PS2_txtarea_1 {
+        grid-row: 1/1;
+        grid-column: 1/3;
+    }
+    .element_A_img_PS2 {
+        grid-row: 2/4; 
+        grid-column: 1/3;
+        width: 90%;
+    }
+    .PS2_txtarea_2 {
+        grid-row: 4/4;
+        grid-column: 1/3;
+    }
+
+    /*-----------PRODUCTS-----------*/
+    .servicio_titulo {
+        width: 80%;
+        padding: 2px;
+        font-size: 40px;
+    }
+    .descripcion {
+        font-size: 18px;
+        margin: 2% 7% 2% 7%;
+        grid-column: 1/5;
+    }
+
+    /*-----------ABOUT US-----------*/
+    .about_us_info{
+        padding: 30px;
+    }.about_us_info h1{
+        width: 90%;
+    }.photo{
+        width: 80%;
+    }
+    .contactus_form{
+    padding: 30px;
+    }.contactus_form h1{
+    width: 90%;
+    }
+
+    /*-----------GENERAL-----------*/
+    .titulo_links_contacto {
+        font-size: 40px;
+    }
+    .correo_img{
+        width: 30%;
+        display: block;
+        margin: 7px auto 7px auto;
+    }
+    .whatsapp_img{
+        width: 30%;
+        display: block;
+        margin: 7px auto 7px auto;
+    }
+    .messenger_img {
+        width: 30%;
+        display: block;
+        margin: 7px auto 7px auto;
+    }
+}
+
+/*---------------------------------419 WIDTH (SM-S9/S8)-------------------------*/
+@media screen and (max-width: 419px){
+    /*THE FLOATING TITTLE INDEX*/
+    .SPECT_tittle{
+        margin-top: 60%;
+    }.SPECT_tittle_txt h1{
+        font-size: 50px;
+    }.SPECT_tittle_txt{
+        font-size: 27px;
+    }
+
+    /*THE FLOATING TITTLE SERVICES*/
+    .SPECT_tittle_servicios{
+        margin-top: 60%;
+    }.SPECT_tittle_txt_servicios h1{
+        font-size: 50px;
+    }.SPECT_tittle_txt_servicios{
+        font-size: 27px;
+    }
+
+    /*THE FLOATING TITTLE CONTACT US*/
+    .SPECT_tittle_contacto{
+        margin-top: 60%;
+    }
+    .SPECT_tittle_txt_contacto h1{
+        font-size: 50px;
+    }
+    .SPECT_tittle_txt_contacto{
+        font-size: 27px;
+    }
+
+    /*-----------INDEX-----------*/
+    .titulo{
+        font-family:Gibson-Bold;
+        color: black;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+        background-color: #e9e2da;
+        border-radius: 15px;
+        width: 80%;
+        margin: auto auto 30px auto;
+        padding: 3px;
+    }
+
+    /*ELEMENT (A)*/
+    .A_tittle{
+        font-family:Gibson-Bold;
+        color: black;
+        font-size: 50px;
+        font-weight: bolder;
+        width: 100%;
+        line-height:100%;
+    }
+    .A_image{
+        object-fit: cover;
+        width: 75%;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+    }
+    .button_center{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 40%;
+        transition: all 500ms ease;
+    }
+    .A_element_button{
+        margin-top: 20px;
+        color: #ffff;
+        background-color: black;
+        font-weight: bold;
+        font-family:Gibson-Bold;
+    }
+    /*ELEMENT (B)*/
+    .B_tittle{
+        font-family:Gibson-Bold;
+        color: #ffff;
+        font-size: 50px;
+        font-weight: bolder;
+        width: 100%;
+        line-height:100%;
+    }
+    .B_image{
+        border-radius: 15px;
+        object-fit: cover;
+        width: 90%;
+        display: block;
+        margin: 30px auto 30px auto;
+    }
+    .B_element_button{
+        background-color: #ffff;
+        color: black;
+        font-family:Gibson-Bold;
+        margin-top: 20px;
+    }
+    
+    /*-----------PRODUCTS-----------*/
+    .servicio_titulo {
+        width: 90%;
+    }
+    .descripcion {
+        font-size: 15px;
+    }
+    .imagen_service {
+        width:90%;
+    }
+
+    /*-----------SERVICES-----------*/
+    /*Se usa el mismo floating que en PRODUCTS*/
+
+
+    /*SERVICES*/
+    .titulo_services{
+        font-family:Gibson-Bold;
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        background-color: #e9e2da;
+        border-radius: 15px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /*WEBPAGE*/
+    .element_A_imgarea_WEBPAGE{
+        grid-column: 1/5;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .element_A_tittle_WEBPAGE{
+        margin-top: 30px;
+        font-family:Gibson-Bold;
+        color: #ffff;
+        background-color: black;
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        border-radius: 7px;
+        font-size: 35px;
+        font-weight: bold;
+        z-index: 19;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .element_A_description_WEBPAGE{
+        font-size: 15px;
+        color: white;
+        background-color:var(--ElColorFresa);
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        width: 85%;
+        display: block;
+        margin: 15px auto auto auto;
+    }
+
+    .services_grid_button{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 7px 16px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 40%;
+        transition: all 500ms ease;
+    }
+    .services_button_element_A{
+        margin-top: 10px;
+        color: black;
+        background-color: #ffff;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .services_center_button{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 15%;
+        transition: all 500ms ease;
+    }
+
+    /*GRAPHIC DESIGN*/
+    .graphic_design{
+        width: 90%;
+        font-size: 35px;
+    }
+    .element_B_description_text{
+        width: 50%;
+        font-size: 15px;
+    }
+    .element_B_img{
+        width: 90%;
+    }
+    .services_center_button{
+        width: 35%;
+    }
+
+    /*PS3 SERVICE*/
+    .element_A_container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .PS3_txtarea_1{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .PS3_txtarea_2{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .element_A_tittle{
+        width: 90%;
+    }
+
+    .services_grid_button{
+        width: 40%;
+    }
+
+    .services_button_element_A{
+        font-size: 16px;
+    }
+    /*SLIDER*/
+    .container_slider_services{
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+
+    /*PC SERVICE*/
+    .PC_service{
+        width: 80%;
+    }
+    .element_B_right_responsive{
+        grid-column: 2/5;
+    }
+
+    /*PS2 Service*/
+    .element_A_img_PS2 {
+        width: 100%;
+    }
+
+    /*-----------ABOUT US-----------*/
+    .contactus_contenedor{
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .about_us_info{
+        grid-row: 1/3;
+        padding: 15px;
+        max-height: 700px;
+    }.photo{
+        width: 90%;
+    }
+    .contactus_form{
+        grid-row: 3/5;
+        padding: 15px;
+        max-height: 700px;
+    }.contactus_form form{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }.contactus_form form .block{
+        grid-column: 1/5;
+        max-height: 150px;
+    }
+    .contactus_form form p{
+        font-size: 15px;
+        grid-column: 1/5;
+        max-height: 80px;
+    }
+
+    
+    /*-----------GENERAL-----------*/
+    .links_contacto_servicio {
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .titulo_links_contacto {
+        font-size: 40px;
+    }
+    .link_servicio a {
+        margin: 10px auto 10px auto;
+    }
+    .link_correo{
+        grid-column: 1/4;
+        border-radius: 0px;
+    }
+    .link_whatsapp{
+        grid-column: 1/4;
+        border-radius: 0px;
+    }
+    .link_messenger{
+        grid-column: 1/4;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .correo_img{
+        width: 30%;
+        display: block;
+        margin: 7px auto 7px auto;
+    }
+    .whatsapp_img{
+        width: 30%;
+        display: block;
+        margin: 7px auto 7px auto;
+    }
+    .messenger_img {
+        width: 30%;
+        display: block;
+        margin: 7px auto 7px auto;
+    }
+    .go_back {
+        display: block;
+        margin-top: 70%;
+    }
+}
