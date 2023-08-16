@@ -40,7 +40,8 @@ body{
 }
 .logoWelcome{
     display: block;
-    margin: 15% auto auto auto;
+    margin: 15% auto 2% auto;
+    width: 40%;
 }
 #carga_pagina{
     background-color: var(--ElColorFresa);
@@ -528,9 +529,13 @@ body{
 }.element_B_tittle_2_Batocera ul li a{
     display: block;
     padding: 5px;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: 200ms ease-in-out;
+}.element_B_tittle_2_Batocera ul li a:visited{
+    list-style: none;
+    text-decoration: none;
 }.element_B_tittle_2_Batocera a:hover{
     transform: scale(1.2);
     transition: all 250ms ease;
@@ -555,7 +560,7 @@ body{
     margin: auto;
     margin-top: 0;
     text-align: center;
-}.element_B_tittle_2_Batocera_mobile li {
+}.element_B_tittle_2_Batocera_mobile li{
     margin: 8px auto 8px auto;
 }
 .element_B_tittle_2_Batocera_mobile ul li{
@@ -564,9 +569,13 @@ body{
 }.element_B_tittle_2_Batocera_mobile ul li a{
     display: block;
     padding: 5px;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: 200ms ease-in-out;
+}.element_B_tittle_2_Batocera_mobile ul li a:visited{
+    list-style: none;
+    text-decoration: none;
 }.element_B_tittle_2_Batocera_mobile a:hover{
     transform: scale(1.2);
     transition: all 250ms ease;
@@ -841,6 +850,18 @@ body{
     margin: 15px;
     grid-column: 2/4;
 }
+
+.mantenimiento_ps3{
+    margin-bottom: 10%;
+}.mantenimiento_ps3 a{
+    color: #FA7AF3;
+    text-decoration: none;
+}.mantenimiento_ps3 a:visited{
+    text-decoration: none;
+}.mantenimiento_ps3 a:hover{
+    color: #81439A;
+}
+
 .go_back{
     margin: 20px;
  }.go_back a{
@@ -1262,49 +1283,33 @@ body{
  }
 
  .body_container_contact_us{
-    max-width: 1366px;
     background: var(--dark);
     margin: auto;
 }
 
-.contactus_contenedor{
-    margin: 100px 50px 50px 50px ;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background: #303C54;
-}
-.contactus_contenedor_b{
-    margin: 100px 50px 50px 50px ;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background: #303C54;
+.contactus_container{
+    margin: 5% 10%;
+    display: flex;
 }
 
-.about_us_info{
-    grid-column: 1/3;
-    background: #B29FBB;
-    padding: 70px;
-    color: #000;
-    border-radius: 0 80px 80px 0;
-}.about_us_info h1{
+.contact_us_media_img{
+    margin-left: 10%;
+    width: 40%;
     display: block;
     margin: auto;
-    background: #000;
-    border-radius: 7px;
-    width: 450px;
-    padding: 11px;
-    text-align: center;
-    color: #ffff;
-    font-weight: bolder;
-    margin-bottom: 10px;
 }.photo{
-    width: 100%;
     display: block;
     margin: auto;
+}
+
+.contact_us_photo{
+    width: 40%;
+}.contact_us_photo img{
+    width:100%;
 }
 
 .contactus_form{
-    grid-column: 3/5;
+    width: 60%;
     background: #303C54;
     color:white;
     padding: 70px;
@@ -1350,68 +1355,42 @@ body{
     font-weight: bolder;
     margin-bottom: 10px;
  }
-
-.contactus_contenedor_seccion_A{
-    background: #B29FBB;
-    color: #000;
-    padding: 70px;
-    border-radius: 20px;
-    border-radius: 80px 0 0 80px;
-    grid-column: 3/5;
-}
-.contactus_contenedor_seccion_A h1{
-    display: block;
-    margin: auto;
-    background: #000;
-    border-radius: 7px;
-    width: 450px;
-    padding: 11px;
-    text-align: center;
-    color: #ffff;
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-.contactus_contenedor_seccion_B{
-    background: #303C54;
-    color: #ffff;
-    border-radius: 20px;
-    margin: 20px;
-    grid-column: 1/3;
-}
-.contactanos{
-    width: 60%;
-    display: block;
-    margin:auto;
-}
-.contactanos ul li {
-    list-style: none;
-}
-.contactanos ul li a{
-    color: #FFFF;
-    text-decoration: none;
-    display: block;
-    margin: auto;
-    transition: .1s;
+/*//////////////////////////*/
+.contact_us_media{
     width: 70%;
-    margin-top: 20px;
-    border:1px solid #B29FBB;
-    border-radius: 5px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--ElColorFresisima);
 }
-.contactanos ul li a:hover{
-    font-weight: bolder;
-    color: black;
-    transform: scale(1.1);
-    background-color: #662483;
+.contact_us_media li{
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all ease 250ms;
+}.contact_us_media a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}.contact_us_media li:hover{
+    background-color: #000000;
+    transform: scale(1.02);
+    transition:ease-out 250ms;
+    border-left: 2px solid white;
+}.contact_us_media li:nth-child(even){
+    grid-column: 2/3;
 }
+
 .contact_us{
-    width: 40px;
-    margin: 7px;
+    width: 20%;
+    display: block;
 }
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------SITIO WEB RESPONSIVE-----------------------------------------------*/
+/*-------------------------------------------------------------------------WEB RESPONSIVE-----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 .contenedor_general{
     width: 100%;
@@ -1509,10 +1488,8 @@ body{
     /*Description*/
     .about_us_info{
         padding: 50px;
-    }.about_us_info h1{
-        width: 80%;
     }.photo{
-        width: 90%;
+        width: 80%;
     }
 
     /*Form*/
@@ -1816,13 +1793,7 @@ body{
         grid-template-rows: repeat(4, 1fr);
     }
     .about_us_info{
-        grid-column: 1/5;
-        grid-row: 1/3;
         padding: 50px;
-        border-radius:0 0 80px 80px;
-    }
-    .about_us_info h1{
-        width: 80%;
     }
     .photo{
         width: 60%;
@@ -1836,10 +1807,6 @@ body{
         width: 80%;
         margin-bottom: 20px;
     }
-
-    .contactus_contenedor_b{
-        background: #B29FBB;
-    }
     .contactus_contenedor_seccion_A{
         background: #303C54;
         color: #ffff;
@@ -1850,14 +1817,6 @@ body{
     }
     .contactus_contenedor_seccion_A h1{
         width: 90%;
-    }
-    .contactus_contenedor_seccion_B{
-        background: #B29FBB;
-        color: #ffff;
-        border-radius: 0 !important;
-        margin: 0 !important;
-        grid-column: 1/5;
-        grid-row: 3/5;
     }
     .contactanos{
         width: 100%;
@@ -2038,8 +1997,6 @@ body{
     /*-----------ABOUT US-----------*/
     .about_us_info{
         padding: 30px;
-    }.about_us_info h1{
-        width: 90%;
     }.photo{
         width: 80%;
     }
@@ -2353,9 +2310,7 @@ body{
         grid-template-rows: repeat(4, 1fr);
     }
     .about_us_info{
-        grid-row: 1/3;
         padding: 15px;
-        max-height: 700px;
     }.photo{
         width: 90%;
     }
