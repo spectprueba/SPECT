@@ -1659,7 +1659,7 @@ body{
         grid-row: 3/4;
     }
 
-    /*-----------PRODUCTS-----------*/
+    /*-------------------------------------PRODUCTS-------------------------------------*/
     /*BATOCERA*/
     .servicio_titulo{
         width: 70%;
@@ -1675,7 +1675,7 @@ body{
         grid-column: 1/5;
     }
 
-    /*-----------ABOUT US-----------*/
+    /*-------------------------------------ABOUT US-------------------------------------*/
     .about_us_info{
         padding: 20px;
     }
@@ -1691,6 +1691,45 @@ body{
     }
     .contactanos{
         width: 90%;
+    }
+
+    /*-------------------------------------CONTACT US-------------------------------------*/
+    .photo{
+        margin: 10% auto auto auto;
+    }
+
+    .contactus_container{
+        margin: 5% 15%;
+        display: block;
+        align-items: center;
+    }
+    
+    .contact_us_media_img{
+        width: 70%;
+    }
+
+    .contact_us_media{
+        width: 100%;
+    }
+    .contact_us_media li{
+        margin: 5% auto;
+    }
+    
+    .contact_us{
+        width: 20%;
+        display: block;
+    }
+
+    .contact_us_photo{
+        visibility: hidden;
+        display: none;
+    }
+    
+    .contactus_form{
+        width: 100%;
+        background-image: url("../images/form_partner_photo.jpg");
+        background-position:left top;
+        margin: 15% auto;
     }
 }
 
@@ -1717,7 +1756,7 @@ body{
 
     /*THE FLOATING TITTLE CONTACT US*/
     .SPECT_tittle_contacto{
-        margin-top: 30%;
+        margin-top: 25%;
     }
     .SPECT_tittle_txt_contacto h1{
         font-size: 60px;
@@ -1826,6 +1865,12 @@ body{
         width: 60%;
         border:1px solid #303C54;
     }
+
+    /*-------------------------------------CONTACT US-------------------------------------*/
+
+    .contact_us_media_img {
+        width: 100%;
+    }
 }
 /*---------------------------------720 WIDTH-------------------------*/
 @media screen and (max-width: 720px){
@@ -1865,7 +1910,14 @@ body{
     .element_A_img_PS2 {
         width: 100%;
     }
+
+    /*-------------------------------------CONTACT US-------------------------------------*/
+    .photo {
+        width: 70%;
+    }
+
 }
+
 /*---------------------------------615 WIDTH-------------------------*/
 @media screen and (max-width: 615px){
     /*MENU BAR DISPLAY*/
@@ -2024,6 +2076,11 @@ body{
         width: 30%;
         display: block;
         margin: 7px auto 7px auto;
+    }
+
+    /*-------------------------------------CONTACT US-------------------------------------*/
+    .contactus_container {
+        margin: 5% 5%;
     }
 }
 
@@ -2373,5 +2430,13 @@ body{
     .go_back {
         display: block;
         margin-top: 70%;
+    }
+
+    /*-------------------------------------CONTACT US-------------------------------------*/
+    .contactus_form h1 {
+        font-size: 150%;
+    }
+    .contact_us {
+        width: 30%;
     }
 }
