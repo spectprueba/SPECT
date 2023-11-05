@@ -4,6 +4,7 @@
     --darkx:#1d2027;
     --ElColorFresa: #020c1b;
     --ElColorFresisima: #0a192f;
+    --Moradito: #81439A;
 }
 body{
     background-color: var(--dark);
@@ -40,6 +41,15 @@ body{
     font-family:Montserrat-Light !important;
 }
 
+/*--------------------------------- GENERAL ----------------------------*/
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    transition: all 500ms ease;
+}
 
 /*-----------------------------------------------------------------------*/
 /*----------------------The Welcome Screen--------------------------------*/
@@ -445,10 +455,13 @@ body{
 .Sector-A{
     background-color: #cedbe3;
     height: 100%;
+    min-height: 80vh;
     width: 100%;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .A-element{
@@ -463,59 +476,57 @@ body{
     font-size: 50px;
     font-weight: bolder;
     width: 100%;
-}.A_element p{
-    font-size: 20px;
-    margin-top: 8px;
 }
-.A_image{
+
+.A-image{
     object-fit: cover;
-    width: 25%;
+    width: 30%;
     border-radius: 5px;
     display: block;
     margin: auto;
 }
-.button_center{
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 20px;
+
+.A-element-button{
+    margin: 2% auto auto auto !important;
+    padding: 1%;
+    color: #ffffff;
+    background-color: black;
     border-radius: 5px;
-    display: block;
-    margin: auto;
     text-align: center;
     width: 10%;
     transition: all 500ms ease;
+}.A-element-button:hover{
+    background-color: var(--dark);
+    color: var(--Moradito);
 }
-.A_element_button{
-    margin-top: 10px;
-    color: #ffff;
-    background-color: black;
-    font-weight: bold;
-    font-family:Gibson-Bold;
-}
+
 /*--------------------------ELEMENT (B)-------------------------------*/
-.Sector_B{
+.Sector-B{
+    background-color: var(--dark);
+    min-height: 80vh;
     padding-top: 40px;
     padding-bottom: 40px;
-    height: 100%;
     width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-.B_element{
+
+.B-element{
     color: #ffff;
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
-.B_tittle{
-    font-family:Gibson-Bold;
+
+.B-tittle{
     color: #ffff;
     font-size: 50px;
     font-weight: bolder;
     width: 100%;
-}.B_element p{
-    font-size: 20px;
-    margin-top: 8px;
 }
-.B_image{
+
+.B-image{
     border-radius: 15px;
     object-fit: cover;
     width: 50%;
@@ -524,12 +535,19 @@ body{
     display: block;
     margin: auto;
 }
-.B_element_button{
-    margin-top: 20px;
+
+.B-element-button{
+    margin: 2% auto auto auto !important;
+    padding: 1%;
     color: black;
-    background-color: #ffff;
-    font-weight: bold;
-    font-family:Gibson-Bold;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    width: 10%;
+    transition: all 500ms ease;
+}.B-element-button:hover{
+    background-color: var(--Moradito);
+    color: #ffffff;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -623,29 +641,6 @@ body{
     margin: auto;
     text-align: center;
     width: 30%;
-    transition: all 500ms ease;
-}
-.services_button_element_A{
-    margin-top: 10px;
-    color: black;
-    background-color: #ffff;
-    font-weight: bold;
-}
-.services_button_element_B{
-    margin-top: 10px;
-    color: black;
-    background-color: #ffff;
-    font-weight: bold;
-}
-.services_center_button{
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: 15%;
     transition: all 500ms ease;
 }
 .servicio_titulo{
@@ -1422,6 +1417,8 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------WEB RESPONSIVE-----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------1366 WIDTH-------------------------*/
 
 /*---------------------------------1290 WIDTH-------------------------*/
 @media screen and (max-width: 1290px){
