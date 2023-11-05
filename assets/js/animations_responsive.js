@@ -14,7 +14,7 @@ window.onload = function() {
                 document.getElementById('SPECT-tittle').style.width = '60%';
             }, 1500)
             setTimeout(function () {
-                document.getElementById("SPECT_tittle_txt").style.opacity='1';
+                document.getElementById("SPECT-tittle-txt").style.opacity='1';
             }, 2500)
             setTimeout(function () {
                 document.getElementById("welcome").style.width='0%';
@@ -28,10 +28,10 @@ window.onload = function() {
 
             //SERVICES
             setTimeout(function () {
-                document.getElementById('SPECT_tittle_servicios').style.width = '60%';
+                document.getElementById('SPECT-tittle-servicios').style.width = '60%';
             }, 1500)
             setTimeout(function () {
-                document.getElementById("SPECT_tittle_txt_servicios").style.opacity='1';
+                document.getElementById("SPECT-tittle-txt-servicios").style.opacity='1';
             }, 2500)
             setTimeout(function () {
                 document.getElementById("welcome").style.width='0%';
@@ -68,7 +68,7 @@ window.onload = function() {
             document.getElementById('SPECT-tittle').style.width = '40%';
         }, 1500)
         setTimeout(function () {
-            document.getElementById("SPECT_tittle_txt").style.opacity='1';
+            document.getElementById("SPECT-tittle-txt").style.opacity='1';
         }, 2500)
         setTimeout(function () {
             document.getElementById("welcome").style.width='0%';
@@ -82,10 +82,10 @@ window.onload = function() {
 
         //SERVICES
         setTimeout(function () {
-            document.getElementById('SPECT_tittle_servicios').style.width = '40%';
+            document.getElementById('SPECT-tittle-servicios').style.width = '40%';
         }, 1500)
         setTimeout(function () {
-            document.getElementById("SPECT_tittle_txt_servicios").style.opacity='1';
+            document.getElementById("SPECT-tittle-txt-servicios").style.opacity='1';
         }, 2500)
         setTimeout(function () {
             document.getElementById("welcome").style.width='0%';
@@ -99,10 +99,10 @@ window.onload = function() {
 
         //CONTACT US
         setTimeout(function () {
-            document.getElementById('SPECT_tittle_contacto').style.width = '40%';
+            document.getElementById('SPECT-tittle-contacto').style.width = '40%';
         }, 1500)
         setTimeout(function () {
-            document.getElementById('SPECT_tittle_txt_contacto').style.opacity='1';
+            document.getElementById('SPECT-tittle-txt-contacto').style.opacity='1';
         }, 2500)
         setTimeout(function () {
             document.getElementById("welcome").style.width='0%';
@@ -133,7 +133,7 @@ start();
                 }, 1501)
 
                 setTimeout(function () {
-                    document.getElementById('SPECT_tittle_contacto').style.width = '40%';
+                    document.getElementById('SPECT-tittle-contacto').style.width = '40%';
                 }, 1501)
             break
 
@@ -143,7 +143,7 @@ start();
                 }, 1501)
 
                 setTimeout(function () {
-                    document.getElementById('SPECT_tittle_contacto').style.width = '60%';
+                    document.getElementById('SPECT-tittle-contacto').style.width = '60%';
                 }, 1501)
             break
 
@@ -153,7 +153,7 @@ start();
             }, 1501)
 
             setTimeout(function () {
-                document.getElementById('SPECT_tittle_contacto').style.width = '60%';
+                document.getElementById('SPECT-tittle-contacto').style.width = '60%';
             }, 1501)
         }
     }

@@ -6,9 +6,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<!--Los estilos personalizados-->
-		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="./assets/css/estilos.css">
 		<!--Las fuentes personalizadas-->
-		<link rel="stylesheet" type="text/css" href="css/fuentes.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/fuentes.css">
 		<!--Icono-->
 		<link rel="shortcut icon" type="image/x-icon" href="./Logo-SPECT.ico">
 		
@@ -16,65 +16,79 @@
 	</head>
 
 	<body>
-		<div class="contenedor_general">
-			<!------------------------------------------------------------------------->
+		<div class="general-container">
+
 			<!---------------------------Start of the header--------------------------->
-			<!------------------------------------------------------------------------->
-			<div class="header">
-				<div class="container-header">
-					<div class="logo"> 
-						<a href="index.html"> <img src="./images/SPECT LOGO.png" class="logo_1"> </a> 
-					</div>
+            <div class="container-header">
 
-					<nav class="menu">
-						<a href="productos.html"> Productos</a>
-						<a href="servicios.html"> Servicios</a>
-						<a href="contactenos.html"> Contactenos</a>
-						<a class="facebook"  href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"></a>
-						<a class="instagram"  href="https://www.instagram.com/spect_cr/" target="_blank"> </a>
-					</nav>
+                <div class="logo-container"> 
+                    <a href="index.html"> <img src="./assets/images/logos/Isotipo-SPECT-BlancoNegro.svg" class="logo-header"> </a> 
+                </div>
 
-					<nav class="toggle" id="toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-					</nav>
-					<div class="container_toggle_bar" id="container_toggle_bar">
-						<div class="cont_toggle_bar" id="cont_toggle_bar">
-							<nav>
-								<a href="productos.html"> Productos</a>
-								<a href="servicios.html"> Servicios</a>
-								<a href="contactenos.html"> Contactenos</a>
-								<a href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"> Facebook</a>
-								<a href="https://www.instagram.com/spect_cr/" target="_blank"> Instagram </a>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!------------------------------------------------------------------------->
+                <nav class="menu Gibson-Regular">
+                    <a href="productos.html"> Productos</a>
+                    <a href="servicios.html"> Servicios</a>
+                    <a href="contactenos.html"> Contactenos</a>
+                    <a class="facebook"  href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"></a>
+                    <a class="instagram"  href="https://www.instagram.com/spect_cr/" target="_blank"> </a>
+                </nav>
+
+                <nav class="toggle" id="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+
+                <div class="container-toggle-bar" id="container_toggle_bar">
+                    <div class="cont-toggle-bar" id="cont_toggle_bar">
+                        <nav>
+                            <a href="productos.html"> Productos</a>
+                            <a href="servicios.html"> Servicios</a>
+                            <a href="contactenos.html"> Contactenos</a>
+                            <a href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"> Facebook</a>
+                            <a href="https://www.instagram.com/spect_cr/" target="_blank"> Instagram </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
 			<!---------------------------End of the header----------------------------->
-			<!------------------------------------------------------------------------->
+
+
+            <!--------------------------------LOADER----------------------------------->
 			<div class="welcome" id="welcome">
-				<img src="./images/Logo SPECT.svg" class="logoWelcome" id="logoWelcome">
+				<img src="./assets/images/logos/Imagotipo-SPECT.svg" class="logoWelcome" id="logoWelcome">
 				<div id="carga_pagina">
+
 				</div>
 			</div>
+			<!--------------------------------END LOADER------------------------------->
+
+
 			<!------------------------------------------------------------------------->
 			<!---------------------------START OF THE CONTENT-------------------------->
 			<!------------------------------------------------------------------------->
-			<section id="SPECT_container_servicios">
+
+			<section id="SPECT-container-servicios">
+
 				<!--FLOATING TITTLE-->
-				<div class="SPECT_tittle_servicios" id="SPECT_tittle_servicios">
-					<div class="SPECT_tittle_txt_servicios" id="SPECT_tittle_txt_servicios">
-						<h1>SPECT</h1>Servicios
+				<div id="SPECT-tittle-servicios" class="SPECT-tittle-Services-container">
+
+					<div id="SPECT-tittle-txt-servicios" class="SPECT-tittle-Services">
+						<h1 class="Gibson-Bold">SPECT</h1>
+						<h2 class="BebasNeue-Regular">Servicios</h2>
 					</div>
+
 				</div>
 				<!--FLOATING TITTLE-->
+
 			</section>
 
-			<img src="./images/Servicios.png" alt="" class="services_banner">
-			<div class="titulo_services">
+			<div class="services-container">
+				
+			</div>
+			<img src="./assets/images/Servicios.png" alt="" class="services_banner">
+
+			<div class="titulo_services Gibson-Bold">
 				¿QUÉ OFRECEMOS?
 			</div>
 
@@ -281,7 +295,7 @@
 			<!------------------------------------------------------------------------->
 			<!---------------------------END OF THE CONTENT---------------------------->
 			<!------------------------------------------------------------------------->
-			<script src="./js/animations_responsive.js"></script>
+			<script src="./assets/js/animations_responsive.js"></script>
 		</div>
 	</body>
 </html>
