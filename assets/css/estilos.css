@@ -443,8 +443,7 @@ body{
     background-color: #e9e2da;
     border-radius: 15px;
     width: 50%;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: auto auto 30px auto;
     padding: 1%;
 }
 
@@ -641,32 +640,13 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------SERVICIOS----------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-.services_grid_button{
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block;
+.services-container{
+    max-width: 1366px;
     margin: auto;
-    text-align: center;
-    width: 30%;
-    transition: all 500ms ease;
 }
-.servicio_titulo{
-    font-family: Gibson-Bold;
-    margin: 120px auto auto auto;
-    color: #ffff;
-    text-align: center;
-    color: black;
-    background-color: #ffff;
-    font-weight: bold;
-    font-size: 50px;
-    width: 600px;
-    border-radius: 7px;
-}
-/*-----------------------------------------------------------------------*/
-/*----------------------CONTAINER DE EL TÍTULO DE SERVICIOS--------------*/
-/*-----------------------------------------------------------------------*/
+
+/*----------------------Floating Tittle Services--------------*/
+
 #SPECT-container-servicios{
     max-width: 600px;
 }
@@ -700,53 +680,37 @@ body{
     font-weight: 100;
 }
 
+/*----------------------Floating Tittle Services--------------*/
+
 .services_banner{
     width: 100%;
     height: 400px;
     object-fit: cover;
-    margin-bottom: 20PX;
 }
+
 /*---------------------------TITULO----------------------------------*/
 .titulo_services{
-    color: black;
-    font-size: 50px;
-    font-weight: bolder;
     text-align: center;
+    color: black;
     background-color: #e9e2da;
+    font-size: 50px;
+    text-align: center;
     border-radius: 15px;
     width: 50%;
-    margin: auto auto auto 30px;
+    margin: 30px auto 30px auto;
     padding: 1%;
 }
-/*---------------------------CREACIÓN DE PÁGINAS WEB----------------------------------*/
-.element_A_container_WEBPAGE{
-    background-color: #CAD3E6;
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+/*---------------------------WEB DEVELOPMENT----------------------------------*/
+.web-development-tittle{
+
 }
-.element_A_container_WEBPAGE a:hover{
-    color: #81439A;
-    background-color: black;
-}
-.element_A_imgarea_WEBPAGE{
-    grid-column: 2/4;
-}
-.element_A_tittle_WEBPAGE{
-    margin-top: 30px;
-    font-family:Gibson-Bold;
-    color: #ffff;
-    background-color: black;
-    width: 100%;
-    padding: 10px;
-    border-radius: 7px;
-    font-size: 50px;
-    font-weight: bold;
-    z-index: 19;
-    text-align: center;
-    margin-bottom: 30px;
+
+.web-development-img{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
 }
 .element_A_description_WEBPAGE{
     font-size: 18px;
