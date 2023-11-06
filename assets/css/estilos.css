@@ -645,6 +645,30 @@ body{
     margin: auto;
 }
 
+.A-services-description{
+    font-size: 18px;
+    color: white;
+    background-color:var(--ElColorFresa);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 550px;
+    display: block;
+    margin: 15px auto auto auto;
+}
+
+.B-services-description{
+    font-size: 18px;
+    color: var(--ElColorFresa);
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 550px;
+    display: block;
+    margin: auto;
+}
+
 /*----------------------Floating Tittle Services--------------*/
 
 #SPECT-container-servicios{
@@ -700,28 +724,25 @@ body{
     margin: 30px auto 30px auto;
     padding: 1%;
 }
+
 /*---------------------------WEB DEVELOPMENT----------------------------------*/
 .web-development-tittle{
-
+    color: #ffffff;
+    background-color: var(--ElColorFresa);
+    font-size: 50px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 30px auto 30px auto;
+    padding: 1%;
 }
 
 .web-development-img{
     object-fit: cover;
-    width: 60%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     display: block;
     margin: auto;
-}
-.element_A_description_WEBPAGE{
-    font-size: 18px;
-    color: white;
-    background-color:var(--ElColorFresa);
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 550px;
-    display: block;
-    margin: 15px auto auto auto;
+    width: 60%;
 }
 
 /*-----------------------------DENTRO DE CREACIÓN DE PÁGINA WEB-----------------------------------*/
@@ -751,9 +772,24 @@ body{
 /*SLIDER*/
 
 /*---------------------------DISEÑO GRÁFICO----------------------------------------*/
-.graphic_design{
+
+.graphic-design-tittle{
+    color: var(--ElColorFresa);
+    background-color: #ffffff;
+    font-size: 50px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 30px auto 30px auto;
+    padding: 1%;
+}
+
+.graphic-design-img{
+    object-fit: cover;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    display: block;
+    margin: 40px auto auto auto;
     width: 40%;
-    text-align: center;
 }
 
 /*-----------------------------LIBERACIÓN DE PS3-----------------------------------*/
