@@ -144,65 +144,48 @@
 
 
 
-			<!-------------------------------------------------------------------------------------------->
 			<!----------------------------------------PS3 SERVICE----------------------------------------->
-			<!-------------------------------------------------------------------------------------------->
-			<div class="element_A_container">
-				<div class="PS3_txtarea_1">
-					<div class="element_A_tittle">
-						LIBERACIÓN PS3
-					</div>
-				</div>
+			<div class="Sector-A">
 
-				<div class="container_slider_services">
-					<div class="slider_services" id="slider_services">
-						<div class="slider_section_services">
-							<img src="./images/photo-1526509867162-5b0c0d1b4b33.jpg" alt="" class="slider_img_services">
-						</div>
-						<div class="slider_section_services">
-							<img src="./images/PS3img1.jpg" alt="" class="slider_img_services">
-						</div>
-						<div class="slider_section_services">
-							<img src="./images/PS3img2.jpg" alt="" class="slider_img_services">
-						</div>
-					</div>
-				</div>
+				<div class="A-element ps3-service-container">
 
-				<div class="PS3_txtarea_2">
-					<div class="element_A_description">
-						¿Querés dejar de pagar por juegos? Esto en definitiva es para vos
-					</div>
-					<a href="Servicios/ps3.html" class="services_grid_button services_button_element_A">SABER MÁS</a>
-				</div>
+                    <div class="A-tittle Gibson-Bold ps3-tittle">
+                        LIBERACIÓN PS3
+                    </div>
+                    
+                    
+                    <div class="container-ps3-slider">
+                        
+                        <div class="slider_services" id="slider_services">
+                            
+                            <div class="slider_section_services">
+                                <img src="./assets/images/photo-1526509867162-5b0c0d1b4b33.jpg" alt="" class="slider_img_services">
+                            </div>
+                            <div class="slider_section_services">
+                                <img src="./assets/images/PS3img1.jpg" alt="" class="slider_img_services">
+                            </div>
+                            <div class="slider_section_services">
+                                <img src="./assets/images/PS3img2.jpg" alt="" class="slider_img_services">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <p class="A-services-description Montserrat-Regular">
+                        ¿Querés dejar de pagar por juegos? Esto en definitiva es para vos
+                    </p>
+                    
+                </div>
+
+                <a href="Servicios/ps3.html" class="button A-element-button Gibson-Bold">SABER MÁS</a>
+                    
 			</div>
-			<script>
-				const sliderPS3 = document.querySelector("#slider_services");
-				let sliderSectionPS3 = document.querySelectorAll(".slider_section_services");
-				let sliderSectionLastPS3 = sliderSectionPS3[sliderSectionPS3.length -1];
-				
-				sliderPS3.insertAdjacentElement('afterbegin', sliderSectionLastPS3);
-				
-				function NextPS3(){
-					let sliderSectionFirstPS3 = document.querySelectorAll(".slider_section_services")[0];
-					sliderPS3.style.marginLeft = "-200%";
-					sliderPS3.style.transition = "all 4.5s";
-					setTimeout(function(){
-						sliderPS3.style.transition = "none";
-						sliderPS3.insertAdjacentElement('beforeend', sliderSectionFirstPS3);
-						sliderPS3.style.marginLeft = "-100%";
-					}, 4500);
-				}
-				setInterval(function(){
-					NextPS3();
-				}, 20000);
-			</script>
-			<!------------------------------------------------------------------------------------------->
+
+			<script src="./assets/js/ps3-slider.js"></script>
 			<!----------------------------------------PS3 SERVICE---------------------------------------->
-			<!------------------------------------------------------------------------------------------->
 		
-			<!-------------------------------------------------------------------------------------------->
 			<!----------------------------------------SSD UPDATE SERVICE---------------------------------->
-			<!-------------------------------------------------------------------------------------------->
 			<div class="element_B_container common_grid">
 				<div class="element_B_left">
 					<div class="element_B_tittle PC_service">
@@ -249,9 +232,7 @@
 				</div>
 
 			</div>
-			<!-------------------------------------------------------------------------------------------->
 			<!----------------------------------------SSD UPDATE SERVICE---------------------------------->
-			<!-------------------------------------------------------------------------------------------->
 
 			<!-------------------------------------------------------------------------------------------->
 			<!----------------------------------------PS2 SERVICE----------------------------------------->
