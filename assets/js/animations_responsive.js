@@ -157,28 +157,3 @@ start();
             }, 1501)
         }
     }
-    
-    
-    //Las barritas de menu
-    let menutoggle = document.getElementById('toggle'); //Animacion de pestaña de menu
-    let menubackground = document.getElementById('container_toggle_bar'); //Fondo oscuro
-    let menubar = document.getElementById('cont_toggle_bar'); //El menú como tal
-
-    function desplegar_menu(){
-        menutoggle.classList.toggle('active');
-        menubackground.classList.toggle('active');
-        menubar.classList.toggle('active');
-    }
-    menutoggle.addEventListener("click" , desplegar_menu);
-
-    //Las barritas de SSD Update
-    let menutoggle_ssd = document.getElementById('toggle_ssd_options'); //Animacion de pestaña de menu
-    let menubackground_ssd = document.getElementById('container_toggle_bar_ssd'); //Fondo oscuro
-    let menubar_ssd = document.getElementById('cont_toggle_bar_ssd'); //El menú como tal
-
-    function desplegar_menu_del_ssd(){
-        menutoggle_ssd.classList.toggle('active');
-        menubackground_ssd.classList.toggle('active');
-        menubar_ssd.classList.toggle('active');
-    }
-    menutoggle_ssd.addEventListener("click" , desplegar_menu_del_ssd);
