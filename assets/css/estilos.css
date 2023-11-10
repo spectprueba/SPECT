@@ -1017,9 +1017,7 @@ body{
     padding: 1%;
 }
 
-.PC-service-floating{
-
-}.PC-service-floating h1{
+.PC-service-floating h1{
     font-size: 20px;
     margin: 20px auto;
 }.PC-service-floating ul li{
@@ -1031,6 +1029,10 @@ body{
 }.PC-service-floating a{
     text-decoration: none;
     color: #ffffff;
+    transition: all ease 500ms;
+}.PC-service-floating a:hover{
+    transform: scale(1.1);
+    transition: all ease 500ms;
 }
 
 .PC-service-floating-img{
@@ -1177,98 +1179,109 @@ body{
     grid-column: 2/4;
 }
 
-/*---------------------------PS2------------------------------------*/
-.PS2_txtarea_1{
-    grid-row: 2/4;
-    grid-column: 1/2;
-    padding: 20px;
-}
-.PS2_txtarea_2{
-    grid-row: 3/4;
-    grid-column: 1/2;
-    padding: 20px;
-}
-.element_A_img_PS2{
-    width: 90%;
-    border-radius: 5px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-    grid-column: 2/3;
-    grid-row: 2/4;
-    display: block;
-    margin: auto;
-}
-
-.element_A_tittle{
-    grid-row: 2/4;
-    font-family:Gibson-Bold;
-    color: #ffff;
-    background-color: black;
-    width: 60%;
-    border-radius: 7px;
+/*-----------------------------LIBERACIÓN DE PS2-----------------------------------*/
+.ps2-tittle{
+    color: #ffffff;
+    background-color: var(--ElColorFresa);
     font-size: 50px;
-    font-weight: bold;
-    z-index: 19;
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-}
-.element_A_description{
-    grid-row: 3/4;
-    font-size: 18px;
-    color: white;
-    background-color:var(--ElColorFresa);
     border-radius: 15px;
-    padding: 15px;
-    text-align: center;
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    padding: 1%;
 }
 
-.element_A_img{
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
+.ps2-img{
+    object-fit: cover;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-    grid-column: 1/2;
+    border-radius: 5px;
     display: block;
-    margin: auto;
+    margin: 40px auto auto auto;
+    width: 40%;
 }
+
 /*---------------------------WII------------------------------------*/
-.Wii_tittle{
-    width: 55%;
-    text-align: center;
-    padding: 7px;
-    margin-bottom: 30px;
+.Wii-tittle{
+    color: var(--ElColorFresa);
+    background-color: #ffffff;
+    font-size: 50px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 30px auto 30px auto;
+    padding: 1%;
 }
+
+.wii-img{
+    object-fit: cover;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    display: block;
+    margin: 40px auto 40px auto;
+    width: 40%;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------CONTACTENOS--------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-#SPECT_container_contacto{
+#SPECT-container-contacto{
     max-width: 600px;
 }
-.SPECT_tittle_contacto{
+.SPECT-tittle-contacto-container{
     background-color:var(--darkx);
     margin-top: 10%;
     max-width: 600px;
     transition: 1s ease-in-out;
-    font-family:BebasNeue-Regular;
     padding: 20px;
     border-radius: 0px 15px 15px 0px;
     width: 0px;
     position: absolute;
     z-index: 10;
     left: 0;
-}.SPECT_tittle_txt_contacto{
+}.SPECT-tittle-contacto{
     opacity: 0;
     transition: 2s ease-in-out;
     color: #ffff;
     font-size: 45px;
- }.SPECT_tittle_txt_contacto h1{
-    font-family:Gibson-Bold;
+ }.SPECT-tittle-contacto h1{
     font-size: 70px;
     letter-spacing: 2px;
     font-weight: bolder;
     margin: 0px;
+ }.SPECT-tittle-contacto h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 0px;
  }
+/* 
+ .SPECT-tittle-Services-container{
+    background-color:var(--darkx);
+    margin-top: 10%;
+    max-width: 600px;
+    transition: 1s ease-in-out;
+    padding: 20px;
+    border-radius: 15px 0px 0px 15px;
+    width: 0px;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+}
+
+.SPECT-tittle-Services{
+    opacity: 0;
+    transition: 2s ease-in-out;
+    color: #ffff;
+    width: 100%;
+}.SPECT-tittle-Services h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 0 auto 2% auto;
+}.SPECT-tittle-Services h2{
+    font-size: 40px;
+    margin: 0 auto 2% auto;
+    font-weight: 100;
+} */
 
 .contactus_container{
     margin: 5% 10%;
