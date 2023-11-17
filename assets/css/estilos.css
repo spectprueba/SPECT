@@ -707,7 +707,7 @@ body{
 
 /*----------------------Floating Tittle Services--------------*/
 
-.services_banner{
+.services-banner{
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -848,31 +848,6 @@ body{
     grid-row: 3/4;
     grid-column: 1/2;
     padding: 20px;
-}
-
-.element_A_tittle{
-    grid-row: 2/4;
-    font-family:Gibson-Bold;
-    color: #ffff;
-    background-color: black;
-    width: 60%;
-    border-radius: 7px;
-    font-size: 50px;
-    font-weight: bold;
-    z-index: 19;
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-}
-.element_A_description{
-    grid-row: 3/4;
-    font-size: 18px;
-    color: white;
-    background-color:var(--ElColorFresa);
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
 }
 
 /*-----------------------------DENTRO DE LIBERACIÓN DE PS3-----------------------------------*/
@@ -1226,6 +1201,7 @@ body{
 #SPECT-container-contacto{
     max-width: 600px;
 }
+
 .SPECT-tittle-contacto-container{
     background-color:var(--darkx);
     margin-top: 10%;
@@ -1242,84 +1218,84 @@ body{
     transition: 2s ease-in-out;
     color: #ffff;
     font-size: 45px;
- }.SPECT-tittle-contacto h1{
+}.SPECT-tittle-contacto h1{
     font-size: 70px;
     letter-spacing: 2px;
     font-weight: bolder;
     margin: 0px;
- }.SPECT-tittle-contacto h2{
+}.SPECT-tittle-contacto h2{
     font-size: 40px;
     letter-spacing: 2px;
     font-weight: bolder;
     margin: 0px;
- }
-/* 
- .SPECT-tittle-Services-container{
-    background-color:var(--darkx);
-    margin-top: 10%;
-    max-width: 600px;
-    transition: 1s ease-in-out;
-    padding: 20px;
-    border-radius: 15px 0px 0px 15px;
-    width: 0px;
-    position: absolute;
-    z-index: 10;
-    right: 0;
 }
 
-.SPECT-tittle-Services{
-    opacity: 0;
-    transition: 2s ease-in-out;
-    color: #ffff;
-    width: 100%;
-}.SPECT-tittle-Services h1{
-    font-size: 70px;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    margin: 0 auto 2% auto;
-}.SPECT-tittle-Services h2{
-    font-size: 40px;
-    margin: 0 auto 2% auto;
-    font-weight: 100;
-} */
+.contact-us-container{
+    max-width: 1366px;
+    margin: auto;
+}
 
-.contactus_container{
-    margin: 5% 10%;
+.contact-us-element{
     display: flex;
+    margin: 10% auto;
 }
 
-.contact_us_media_img{
+.contact-us-links{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--ElColorFresisima);
+}.contact-us-links li{
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all ease 250ms;
+}.contact-us-links a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}.contact-us-links li:hover{
+    background-color: #000000;
+    transform: scale(1.02);
+    transition:ease-out 250ms;
+    border-left: 2px solid white;
+}.contact-us-links li:nth-child(even){
+    grid-column: 2/3;
+}.contact-us-links img{
+    width: 20%;
+}
+
+.contact-us-media-img{
     margin-left: 10%;
     width: 40%;
     display: block;
     margin: auto;
-}.photo{
-    display: block;
-    margin: auto;
 }
 
-.contact_us_photo{
+.contact-us-photo{
     width: 40%;
-}.contact_us_photo img{
-    width:100%;
 }
 
-.contactus_form{
+.contact-us-form{
     width: 60%;
     background: #303C54;
     color:white;
     padding: 70px;
- }.contactus_form form{
+    font-size: 14px;
+ }.contact-us-form form{
     display: grid;
     grid-template-columns: 1fr 1fr;
- }.contactus_form form .block{
+ }.contact-us-form form .block{
     grid-column: 1/3;
- }.contactus_form form p{
+ }.contact-us-form form p{
     margin: 0;
     padding: 1em;
- }.contactus_form form button,
-  .contactus_form form input,
-  .contactus_form form textarea{
+ }.contact-us-form form button,
+  .contact-us-form form input,
+  .contact-us-form form textarea{
     width: 100%;
     padding: .7em;
     border:none;
@@ -1327,7 +1303,7 @@ body{
     border-bottom: 1px solid #B29FBB;
     outline: none;
     color: #ffff;
- }.contactus_form form button{
+ }.contact-us-form form button{
     background: #B29FBB;
     border: 0;
     text-transform: uppercase;
@@ -1335,11 +1311,11 @@ body{
     grid-column: 1/3;
     font-weight: bolder;
     transition: all 1000ms ease;
- }.contactus_form form button:hover{
+ }.contact-us-form form button:hover{
     background: #000;
     color: #ffff;
     transition: all 500ms ease;
- }.contactus_form h1{
+ }.contact-us-form h1{
     display: block;
     margin: auto;
     background: #ffff;
@@ -1351,39 +1327,6 @@ body{
     font-weight: bolder;
     margin-bottom: 10px;
  }
-/*//////////////////////////*/
-.contact_us_media{
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: var(--ElColorFresisima);
-}
-.contact_us_media li{
-    list-style: none;
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    transition: all ease 250ms;
-}.contact_us_media a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}.contact_us_media li:hover{
-    background-color: #000000;
-    transform: scale(1.02);
-    transition:ease-out 250ms;
-    border-left: 2px solid white;
-}.contact_us_media li:nth-child(even){
-    grid-column: 2/3;
-}
-
-.contact_us{
-    width: 20%;
-    display: block;
-}
-
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------WEB RESPONSIVE-----------------------------------------------------*/
