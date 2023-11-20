@@ -394,10 +394,8 @@ body{
     margin: auto;
 }
 
-/*-----------------------------------------------------------------------*/
-/*----------------------TITTLE INDEX CONTAINER---------------------------*/
-/*-----------------------------------------------------------------------*/
-#SPECT-container{
+/*----------------------Floating Tittle Index--------------*/
+#SPECT-container-Index{
     max-width: 600px;
 }
 .SPECT-tittle-Index-container{
@@ -426,6 +424,7 @@ body{
     font-size: 40px;
     font-weight: 100;
 }
+/*----------------------Floating Tittle Index--------------*/
 
 /*-----------------------------------------------------------------------*/
 /*----------------------SLIDERS AK7--------------------------------------*/
@@ -459,16 +458,6 @@ body{
 /*-----------------------------------------------------------------------*/
 /*----------------------BODY CONTAINER- ELEMENTS-------------------------*/
 /*-----------------------------------------------------------------------*/
-
-.titulo{
-    font-size: 50px;
-    text-align: center;
-    background-color: #e9e2da;
-    border-radius: 15px;
-    width: 50%;
-    margin: auto auto 30px auto;
-    padding: 1%;
-}
 
 /*--------------------------ELEMENT (A)-------------------------------*/
 .Sector-A{
@@ -576,6 +565,39 @@ body{
     margin: auto;
 }
 
+/*----------------------Floating Tittle Products--------------*/
+#SPECT-container-Products{
+    max-width: 600px;
+}
+
+.SPECT-tittle-products-container{
+    background-color:var(--darkx);
+    margin-top: 10%;
+    max-width: 600px;
+    transition: 1s ease-in-out;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+    width: 0px;
+    position: absolute;
+    z-index: 10;
+}
+
+.SPECT-tittle-products{
+    width: 100%;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    color: #ffffff;
+}.SPECT-tittle-products h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+    margin: 0 auto 2% auto;
+}.SPECT-tittle-products h2{
+    margin: 0 auto 2% auto;
+    font-size: 40px;
+    font-weight: 100;
+}
+/*----------------------Floating Tittle Products--------------*/
+
 .products-banner{
     width: 100%;
     height: 400px;
@@ -588,11 +610,20 @@ body{
     margin: auto;
 }
 
-.description{
+.product-tittle{
+    font-size: 50px;
+    text-align: center;
+    background-color: #e9e2da;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto auto 30px auto;
+    padding: 1%;
+}
+
+.product-description{
     color: #fff;
     font-size: 20px;
     margin: 15px;
-    grid-column: 2/4;
 }
 
 .product-image{
@@ -611,6 +642,50 @@ body{
     font-size: 60px;
     padding: 15px;
     border-radius: 7px;
+    margin: 0 !important;
+}
+
+.links-contact-product{
+    display: flex;
+    margin: auto;
+    width: 30%;
+    color: #ffff;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 0 0 10px 0;
+}.links-contact-product a{
+    color: #FFFF;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    transition: .1s;
+    width: 120px;
+    margin-top: 20px;
+    border:1px solid #B491C2;
+    border-radius: 5px;
+    text-align: center;
+}.links-contact-product a:hover{
+    font-weight: bolder;
+    color: black;
+    transform: scale(1.1);
+    background-color: #e2c4ee;
+}
+
+.product-email-link{
+    width: 40px;
+    margin: 7px;
+}
+
+.product-email-whatsapp{
+    width: 40px;
+    margin: 7px;
+}
+
+.product-email-messenger{
+    width: 40px;
+    margin: 7px;
 }
 
 /* -------------------INSIDE BATOCERA------------------- */
@@ -703,32 +778,7 @@ body{
     margin: auto;
 }
 
-.A-services-description{
-    font-size: 18px;
-    color: white;
-    background-color:var(--ElColorFresa);
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 550px;
-    display: block;
-    margin: 15px auto auto auto;
-}
-
-.B-services-description{
-    font-size: 18px;
-    color: var(--ElColorFresa);
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 550px;
-    display: block;
-    margin: auto;
-}
-
 /*----------------------Floating Tittle Services--------------*/
-
 #SPECT-container-servicios{
     max-width: 600px;
 }
@@ -761,8 +811,31 @@ body{
     margin: 0 auto 2% auto;
     font-weight: 100;
 }
-
 /*----------------------Floating Tittle Services--------------*/
+
+.A-services-description{
+    font-size: 18px;
+    color: white;
+    background-color:var(--ElColorFresa);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 550px;
+    display: block;
+    margin: 15px auto auto auto;
+}
+
+.B-services-description{
+    font-size: 18px;
+    color: var(--ElColorFresa);
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 550px;
+    display: block;
+    margin: auto;
+}
 
 .services-banner{
     width: 100%;
@@ -770,8 +843,12 @@ body{
     object-fit: cover;
 }
 
-/*---------------------------TITULO----------------------------------*/
-.titulo_services{
+.service-details{
+    width: 50%;
+    margin: auto;
+}
+
+.service-tittle{
     text-align: center;
     color: black;
     background-color: #e9e2da;
@@ -781,6 +858,65 @@ body{
     width: 50%;
     margin: 30px auto 30px auto;
     padding: 1%;
+}
+
+.service-description{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.tittle-service-contact{
+    background-color: #000;
+    width: auto;
+    color: #fff;
+    font-size: 60px;
+    padding: 15px;
+    border-radius: 7px;
+    margin: 0 !important;
+}
+
+.links-contact-service{
+    display: flex;
+    margin: auto;
+    width: 30%;
+    color: #ffff;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 0 0 10px 0;
+}.links-contact-service a{
+    color: #FFFF;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    transition: .1s;
+    width: 120px;
+    margin-top: 20px;
+    border:1px solid #B491C2;
+    border-radius: 5px;
+    text-align: center;
+}.links-contact-service a:hover{
+    font-weight: bolder;
+    color: black;
+    transform: scale(1.1);
+    background-color: #e2c4ee;
+}
+
+.service-email-link{
+    width: 40px;
+    margin: 7px;
+}
+
+.service-email-whatsapp{
+    width: 40px;
+    margin: 7px;
+}
+
+.service-email-messenger{
+    width: 40px;
+    margin: 7px;
 }
 
 /*---------------------------WEB DEVELOPMENT----------------------------------*/
@@ -803,9 +939,11 @@ body{
     width: 60%;
 }
 
-/*-----------------------------DENTRO DE CREACIÓN DE PÁGINA WEB-----------------------------------*/
-
-/*SLIDER*/
+/*-----------------------------INSIDE WEB DEVELOPMENT-----------------------------------*/
+.web-development-container{
+    margin: 150px auto auto auto;
+}
+/*-----------SLIDER-----------*/
 .container_slider_web_page{
     margin-top: 50px;
     margin-bottom: 25px;
@@ -827,7 +965,7 @@ body{
     width: 100%;
     height: 100%;
 }
-/*SLIDER*/
+/*-----------SLIDER-----------*/
 
 /*---------------------------DISEÑO GRÁFICO----------------------------------------*/
 
@@ -908,10 +1046,6 @@ body{
 }
 
 /*-----------------------------DENTRO DE LIBERACIÓN DE PS3-----------------------------------*/
-.container_servicio{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 .imagen_service{
     width:500px;
     border-radius: 15px;
@@ -938,87 +1072,6 @@ body{
     color: #81439A;
 }
 
-.go_back{
-    margin: 20px;
- }.go_back a{
-    color: #FFFF;
-    background-color: #000;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    transition: all ease 500ms;
- }.go_back a:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
- }
-
-.titulo_links_contacto{
-    background-color: #000;
-    width: auto;
-    color: #fff;
-    font-size: 60px;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 7px;
-}
-.links_contacto_servicio{
-    display: grid;
-    grid-template-columns: repeat(9 ,1fr);
-    color: #ffff;
-    border-radius: 20px;
-    height: 115px;
-}
-.link_servicio a{
-    color: #FFFF;
-    text-decoration: none;
-    display: block;
-    margin: auto;
-    transition: .1s;
-    width: 120px;
-    margin-top: 20px;
-    border:1px solid #B491C2;
-    border-radius: 5px;
-    text-align: center;
-}
-.link_servicio a:hover{
-    font-weight: bolder;
-    color: black;
-    transform: scale(1.1);
-    background-color: #e2c4ee;
-}
-.link_correo{
-    grid-column: 4/5;
-    background: #000;
-    border-radius: 0px 0px 0px 15px;
-}
-.correo_img{
-    width: 40px;
-    margin: 7px;
-}
-.link_whatsapp{
-    grid-column: 5/6;
-    background: #000;
-    border-radius: 0px 0px 0px 0px;
-}
-.whatsapp_img{
-    width: 40px;
-    margin: 7px;
-}
-
-.link_messenger{
-    grid-column: 6/7;
-    background: #000;
-    border-radius: 0px 0px 15px 0px;
-}
-.messenger_img{
-    width: 40px;
-    margin: 7px;
-}
 
 /*---------------------------SERVICIO A COMPUTADORAS----------------------------------*/
 .PC-service-tittle{
