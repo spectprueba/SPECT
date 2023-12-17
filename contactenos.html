@@ -89,13 +89,13 @@
 				<div class="contact-us-element">
 
 					<div class="contact-us-links">
-						<li> <a href="mailto:teamspectcr@gmail.com?Subject=Quiero%comunicarles%que..."> <img src="./assets/images/mailbox.png" alt="" class="contact_us">  </a> </li>
+						<li> <a href="mailto:teamspectcr@gmail.com?Subject=Quiero%comunicarles%que...">                                                     <img src="./assets/images/icons/email.png" alt="" class="contact_us">  </a> </li>
 	
-						<li> <a href="https://api.whatsapp.com/send?phone=50683443610 &text=Hola, me gustaría saber un poco más de SPECT!" target="_blank"> <img src="./assets/images/whatsapp.png" alt="" class="contact_us">  </a></li>
+						<li> <a href="https://api.whatsapp.com/send?phone=50683443610 &text=Hola, me gustaría saber un poco más de SPECT!" target="_blank"> <img src="./assets/images/icons/whatsapp.png" alt="" class="contact_us">  </a></li>
 	
-						<li> <a href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"> <img src="./assets/images/facebook.png" alt="" class="contact_us"> </a></li>
+						<li> <a href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank">                         <img src="./assets/images/icons/facebook.png" alt="" class="contact_us"> </a></li>
 	
-						<li> <a href="https://www.instagram.com/spect_cr/" target="_blank"> <img src="./assets/images/instagram.png" alt="" class="contact_us">  </a></li>
+						<li> <a href="https://www.instagram.com/spect_cr/" target="_blank">                                                                 <img src="./assets/images/icons/instagram.png" alt="" class="contact_us">  </a></li>
 					</div>
 
                     <img src="./assets/images/Logo SPECT.svg" alt="" class="contact-us-media-img">
@@ -108,40 +108,51 @@
                     <img src="./assets/images/form_partner_photo.jpg" alt="" class="contact-us-photo">
 
 					<div class="contact-us-form">
-						<h1 class="Gibson-Regular"> ¡DEJANOS UN MENSAJE! </h1>	
-						<form action="https://formspree.io/f/xoqrevjn" method="POST" class="Montserrat-Regular">
-							<p>
-								<label> Tu nombre </label>
-								<input type="text" name="Nombre">
-							</p>
-							<p>
-								<label> Tu correo electrónico </label>
-								<input type="text" name="Correo_Cliente">
-							</p>
-							<p>
-								<label> Tu número telefónico </label>
-								<input type="tel" name="Telefono_Cliente">
-							</p>
-							<p>
-								<label> Asunto de tu mensaje </label>
-								<input type="text" name="Asunto">
-							</p>
-							<p class="block">
-								<label> Mensaje </label>
-								<textarea name="Mensaje" rows="4"></textarea>
-							</p>
-							<p class="block">
-								<button type="submit">
-									Enviar
-								</button>
-							</p>
-						</form>
-					</div>
 
+						<h1 class="Gibson-Regular"> ¡DEJANOS UN MENSAJE! </h1>	
+
+                        <!-- modify this form HTML and place wherever you want your form -->
+
+                        <form action="https://formspree.io/f/xjvnbkoq" method="POST">
+
+                            <p>
+                                <label>
+                                    Your email:
+                                    <input name="email" type="email" placeholder="Your e-mail" required/>
+                                </label>
+                            </p>
+
+                            <p>
+                                <label>
+                                    Your name:
+                                    <input type="text" name="name" placeholder="Your name">
+                                </label>
+                            </p>
+
+                            <p>
+                                <label>
+                                    Your phone:
+                                    <input type="tel" name="phone" placeholder="Phone">
+                                </label>
+                            </p>
+
+                            <p>
+                                <label>
+                                    Your message:
+                                    <textarea name="message" placeholder="A message to us"></textarea>
+                                </label>
+                            </p>
+
+                            <p class="block">
+                                <button type="submit"> Enviar </button>
+                            </p>
+
+                        </form>
+					</div>
 				</div>
 
 			</div>
-			<script src="./assets/js/animations_responsive.js"></script>
+			<script src="./assets/js/animations-responsive.js"></script>
 		</div>
 	</body>
 </html>

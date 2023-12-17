@@ -169,14 +169,14 @@ body{
 .facebook{
 	height: 25px;
 	width: 25px;
-	background: url(../images/img-sprite.png)no-repeat -256px -276px;
+	background: url(../images/icons/img-sprite.png)no-repeat -256px -276px;
 	padding: 5px;
 }
 
 .instagram{
 	height: 25px;
 	width: 25px;
-	background: url(../images/img-sprite.png)no-repeat -346px -276px;
+	background: url(../images/icons/img-sprite.png)no-repeat -346px -276px;
 	padding: 5px;
 }
 
@@ -776,6 +776,7 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 .services-container{
     margin: auto;
+    max-width: 1366px;
 }
 
 /*----------------------Floating Tittle Services--------------*/
