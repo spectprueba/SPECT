@@ -1,4 +1,18 @@
 /* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------------- MENU BARS --------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 720px){
+    .menu{
+        opacity: 0;
+        transition: 1s ease-in-out;
+        display: none;
+    }
+    .toggle{
+        opacity: 1;
+    }
+}
+    
+/* ------------------------------------------------------------------------------------------ */
 /* ---------------------------------------- INDEX ------------------------------------------- */
 /* ------------------------------------------------------------------------------------------ */
 
@@ -25,6 +39,177 @@
         padding: 0.5%;
     }
 }
+
+/*---------------------------------1290 WIDTH-------------------------*/
+@media screen and (max-width: 1290px){
+    .logo-container {
+        margin-left: 15%;
+    }
+    .menu {
+        margin-right: 10%;
+    }
+    .container-slider {
+        height: 640px;
+    }
+    .index-tittle {
+        margin: 3% auto 3% auto;
+    }
+    .A-image {
+        width: 30%;
+    }
+    .footer-links img {
+        width: 30px;
+    }
+}
+
+/*---------------------------------1090 WIDTH-------------------------*/
+@media screen and (max-width: 1090px){
+    .menu a {
+        font-size: 15px;
+    }
+    .SPECT-tittle-Index-container {
+        margin-top: 20%;
+    }
+    .tittle {
+        width: 30%;
+        font-size: 30px;
+    }
+    .A-element {
+        font-size: 14px;
+    }
+    .A-image {
+        width: 25%;
+    }
+    .A-element-button {
+        font-size: 15px;
+        width: 15%;
+    }
+    .B-element {
+        font-size: 14px;
+    }
+    .PC-index-img {
+        width: 30% !important;
+    }
+    .B-element-button {
+        width: 15%;
+        font-size: 15px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/*---------------------------------900 WIDTH-------------------------*/
+@media screen and (max-width: 900px){
+    .container-header {
+        height: 80px;
+    }
+    .menu {
+        height: 80px;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+    .logo-container {
+        margin-left: 12%;
+        height: 80px;
+    }
+    .logo-header {
+        height: 50px;
+    }
+    .SPECT-tittle-Index h1 {
+        font-size: 45px;
+    }
+    .SPECT-tittle-Index h2 {
+        font-size: 20px;
+    }
+    .container-slider {
+        height: 530px;
+    }
+    .slider-section {
+        margin-top: 80px;
+    }
+    .tittle {
+        font-size: 20px;
+    }
+    .A-tittle {
+        font-size: 40px;
+    }
+    .A-element {
+        font-size: 12px;
+    }
+    .A-element-button {
+        font-size: 12px;
+    }
+    .B-tittle {
+        font-size: 40px;
+    }
+    .B-element {
+        font-size: 12px;
+    }
+    .B-element-button {
+        font-size: 12px;
+    }
+    .footer-links img {
+        width: 25px;
+    }
+    .footer {
+        font-size: 11px;
+    }
+    .copyright {
+        font-size: 11px;
+    }
+}
+
+/*---------------------------------815 WIDTH-------------------------*/
+@media screen and (max-width: 815px){
+    .container-slider {
+        height: 500px;
+    }
+    .A-image {
+        width: 30%;
+    }
+    .PC-index-img {
+        width: 35% !important;
+    }
+    .web-page-index-img {
+        width: 45% !important;
+    }
+}
+
+/*---------------------------------720 WIDTH-------------------------*/
+@media screen and (max-width: 720px){
+    /* NOTHING */
+}
+
+/*---------------------------------615 WIDTH-------------------------*/
+@media screen and (max-width: 615px){
+    .SPECT-tittle-Index-container {
+        margin-top: 30%;
+    }
+    .SPECT-tittle-Index h1 {
+        font-size: 40px;
+    }
+    .SPECT-tittle-Index h2 {
+        font-size: 18px;
+    }
+    .A-element-button {
+        font-size: 12px;
+        width: 20%;
+    }
+    .B-element-button {
+        width: 15%;
+        font-size: 12px;
+    }
+}
+
+
+/*---------------------------------419 WIDTH -------------------------*/
+/* (SM-S9/S8) */
+@media screen and (max-width: 419px){
+
+}
+
 
 /*---------------------------------1290 WIDTH-------------------------*/
 @media screen and (max-width: 1290px){
@@ -549,15 +734,6 @@
 
 /*---------------------------------615 WIDTH-------------------------*/
 @media screen and (max-width: 615px){
-    /*MENU BAR DISPLAY*/
-    .menu{
-        opacity: 0;
-        transition: 1s ease-in-out;
-        display: none;
-    }
-    .toggle{
-        opacity: 1;
-    }
     
     /*-----------SERVICES-----------*/
     .titulo_services{

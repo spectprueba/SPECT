@@ -194,17 +194,20 @@ body{
 	padding: 5px;
 }
 
-/*---------------------RESPONSIVE MENU BARS---------------------*/
-.toggle{
+
+/*-----------------------------------------------------------------------*/
+/*----------------------Responsive menu bars-----------------------------*/
+/*-----------------------------------------------------------------------*/
+.toggle {
     float: right;
     line-height: 75px;
     transition: 1s ease-in-out;
     top: 20px;
-    right: 20px;
+    right: 100px;
     opacity: 0;
     position: relative;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     background: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     border-radius: 10px;
@@ -214,37 +217,38 @@ body{
     cursor: pointer;
     overflow: hidden;
     z-index: 23;
-}.toggle span{
+}.toggle span {
     position: absolute;
-    width: 35px;
-    height: 4px;
+    width: 26px;
+    height: 3px;
     background: #1863ff;
     border-radius: 4px;
     transition: 0.5s;
-}.toggle span:nth-child(1){
-    transform: translateY(-15px);
-    width: 18px;
-    right: 15px;
+}.toggle span:nth-child(1) {
+    transform: translateY(-8px);
+    width: 15px;
+    right: 9px;
 }.toggle.active span:nth-child(1){
     width: 25px;
     transform: translateY(0px) rotate(45deg);
     transition-delay: 0.125s;
-}
-.toggle span:nth-child(2){
-    transform: translateY(15px);
-    width: 16px;
-    right: 15px;
+}.toggle span:nth-child(2) {
+    transform: translateY(8px);
+    width: 15px;
+    right: 20px;
 }.toggle.active span:nth-child(2){
+    right: 9px;
     width: 25px;
     transform: translateY(0px) rotate(315deg);
     transition-delay: 0.25s;
-}
-.toggle.active span:nth-child(3){
+}.toggle.active span:nth-child(3){
     transform: translateX(60px);
+}.toggle.active{
+    right: 30px;
 }
 
-/* The menu inside the responsive bars*/
-.container-toggle-bar{
+/* Once clicked the toggle button designed abovee*/
+.menu-bars-background{
     position: fixed;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -253,13 +257,13 @@ body{
     visibility: hidden;
     opacity: 0;
     z-index: 22;
-}.container-toggle-bar.active{
+}.menu-bars-background.active{
     transition: all 500ms ease;
     visibility: visible;
     opacity: 1;
 }
 
-.cont_toggle_bar{
+.menu-elements{
     width: 100%;
     max-width: 250px;
     background: #1c1c1c;
@@ -268,25 +272,25 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    transition: all 500ms ease;
+    transition: all 750ms ease;
     z-index: 22;
     visibility: hidden;
     opacity: 0;
     display: none;
-}.cont_toggle_bar.active{
+}.menu-elements.active{
     visibility: visible;
     opacity: 1;
     display: block;
-}.cont_toggle_bar nav{
+}.menu-elements nav{
     transform: rotateY(15%);
-}.cont_toggle_bar nav a{
+}.menu-elements nav a{
     display: block;
     text-decoration: none;
     padding: 20px;
     color: #ffff;
     border-left: 5px solid transparent ;
     transition: all 400ms ease;
-}.cont_toggle_bar nav a:hover{
+}.menu-elements nav a:hover{
     cursor: pointer;
     border-left: #1863ff;
     background: #1f1f1f;

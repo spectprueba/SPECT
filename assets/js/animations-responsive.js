@@ -11,7 +11,7 @@ window.onload = function() {
 
             //INDEX
             setTimeout(function () {
-                document.getElementById('SPECT-tittle-Index').style.width = '60%';
+                document.getElementById('SPECT-tittle-Index').style.width = '40%';
             }, 1500)
             setTimeout(function () {
                 document.getElementById("SPECT-tittle-txt-Index").style.opacity='1';
