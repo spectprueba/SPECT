@@ -207,7 +207,78 @@
 /*---------------------------------419 WIDTH -------------------------*/
 /* (SM-S9/S8) */
 @media screen and (max-width: 419px){
-
+    .container-header {
+        height: 70px;
+    }
+    .logo-header {
+        height: 40px;
+    }
+    .logo-container {
+        height: 75px;
+    }
+    .toggle {
+        right: 50px;
+        width: 40px;
+        height: 40px;
+        top: 15px;
+    }
+    .toggle span:nth-child(1) {
+        right: 7px;
+    }
+    .toggle span:nth-child(2) {
+        right: 18px;
+    }
+    .toggle.active span:nth-child(2) {
+        right: 7px;
+    }
+    .menu-elements nav a {
+        font-size: 14px;
+    }
+    .slider-section {
+        margin-top: 70px;
+    }
+    .container-slider {
+        height: 460px;
+    }
+    .SPECT-tittle-Index-container {
+        margin-top: 40%;
+    }
+    .tittle {
+        width: 50%;
+    }
+    .A-tittle {
+        font-size: 30px;
+    }
+    .A-element {
+        font-size: 10px;
+    }
+    .A-image {
+        width: 50%;
+    }
+    .A-element-button {
+        width: 30%;
+    }
+    .B-tittle {
+        font-size: 30px;
+    }
+    .B-element {
+        font-size: 10px;
+    }
+    .PC-index-img {
+        width: 75% !important;
+    }
+    .B-element-button {
+        width: 30%;
+    }
+    .web-page-index-img {
+        width: 85% !important;
+    }
+    .footer {
+        font-size: 9px;
+    }
+    .copyright {
+        font-size: 9px;
+    }
 }
 
 
