@@ -193,6 +193,7 @@
     }
     .PC-index-img {
         width: 35% !important;
+        margin: auto auto 2% auto;
     }
     .web-page-index-img {
         width: 45% !important;
@@ -201,7 +202,15 @@
 
 /*---------------------------------720 WIDTH-------------------------*/
 @media screen and (max-width: 720px){
-    /* NOTHING */
+    .batocera-index-img {
+        width: 35% !important;
+    }
+    .PC-index-img {
+        width: 40% !important;
+    }
+    .web-page-index-img {
+        width: 60% !important;
+    }
 }
 
 /*---------------------------------615 WIDTH-------------------------*/
@@ -215,13 +224,24 @@
     .SPECT-tittle-Index h2 {
         font-size: 18px;
     }
+    .batocera-index-img {
+        width: 40% !important;
+    }
     .A-element-button {
         font-size: 12px;
         width: 20%;
+        padding: 2%;
+    }
+    .PC-index-img {
+        width: 50% !important;
+    }
+    .web-page-index-img {
+        width: 70% !important;
     }
     .B-element-button {
-        width: 15%;
+        width: 20%;
         font-size: 12px;
+        padding: 2%;
     }
 }
 
@@ -281,8 +301,13 @@
         width: 50%;
         margin: 2% auto;
     }
+    .batocera-index-img {
+        width: 60% !important;
+    }
     .A-element-button {
-        width: 30%;
+        font-size: 12px;
+        width: 35%;
+        padding: 4%;
     }
     .Sector-B {
         min-height: unset;
@@ -297,7 +322,9 @@
         width: 75% !important;
     }
     .B-element-button {
-        width: 30%;
+        font-size: 12px;
+        width: 35%;
+        padding: 4%;
     }
     .web-page-index-img {
         width: 85% !important;
