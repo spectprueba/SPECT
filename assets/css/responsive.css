@@ -57,7 +57,7 @@
         width: 40% !important;
     }
     .tittle {
-        font-size: 40px;
+        font-size: 30px;
         padding: 0.5%;
     }
 }
@@ -202,6 +202,12 @@
 
 /*---------------------------------720 WIDTH-------------------------*/
 @media screen and (max-width: 720px){
+    .Sector-A {
+        min-height: 60vh;
+    }
+    .Sector-B {
+        min-height: 60vh;
+    }
     .batocera-index-img {
         width: 35% !important;
     }

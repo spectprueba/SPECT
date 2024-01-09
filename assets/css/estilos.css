@@ -74,12 +74,12 @@ body{
  .tittle{
     font-family: Gibson-Bold;
     color: black;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     text-align: center;
     background-color: #fff;
     border-radius: 15px;
-    width: 40%;
+    width: 35%;
     margin: auto;
     margin-bottom: 30px;
     padding: 1%;
@@ -411,7 +411,7 @@ body{
     width: 25% !important;
 }
 .web-page-index-img{
-    width: 25% !important;
+    width: 40% !important;
 }
 /*-----------------------------------------------------------------------*/
 /*----------------------BODY CONTAINER- ELEMENTS-------------------------*/
@@ -448,7 +448,14 @@ body{
     width: 20%;
     border-radius: 5px;
     display: block;
-    margin: auto;
+    margin: 2% auto 2% auto;
+}
+
+.index-common-container{
+    margin: auto 0px auto 0px ;
+}
+.products-common-container{
+    margin: auto 0px auto 0px ;
 }
 
 .A-element-button{
@@ -519,7 +526,6 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .products-container{
-    max-width: 1366px;
     margin: auto;
 }
 
@@ -740,7 +746,6 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 .services-container{
     margin: auto;
-    max-width: 1366px;
 }
 
 /*----------------------Floating Tittle Services--------------*/
@@ -806,7 +811,7 @@ body{
     width: 100%;
     height: 400px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin: 50px auto 20px auto;
 }
 
 .service-details{
