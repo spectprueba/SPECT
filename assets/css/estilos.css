@@ -80,8 +80,7 @@ body{
     background-color: #fff;
     border-radius: 15px;
     width: 35%;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 30px auto 30px auto;
     padding: 1%;
  }
 
@@ -433,7 +432,7 @@ body{
     color: black;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: auto;
 }
 
 .A-tittle{
@@ -487,7 +486,7 @@ body{
     color: #ffff;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: auto;
 }
 
 .B-tittle{
@@ -527,6 +526,7 @@ body{
 
 .products-container{
     margin: auto;
+    background-image: url(../images/backgroundHTML.jpg);
 }
 
 /*----------------------Floating Tittle Products--------------*/
@@ -567,7 +567,7 @@ body{
     height: 400px;
     object-fit: cover;
     margin-bottom: 20px;
-    margin: 50px auto 20px auto;
+    margin: 50px auto auto auto;
 }
 
 .product-details{
@@ -746,13 +746,13 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 .services-container{
     margin: auto;
+    background-image: url(../images/backgroundHTML.jpg);
 }
 
 /*----------------------Floating Tittle Services--------------*/
 #SPECT-container-servicios{
     max-width: 600px;
 }
-
 .SPECT-tittle-Services-container{
     background-color:var(--darkx);
     margin-top: 10%;
@@ -765,7 +765,6 @@ body{
     z-index: 10;
     right: 0;
 }
-
 .SPECT-tittle-Services{
     opacity: 0;
     transition: 2s ease-in-out;
@@ -783,68 +782,87 @@ body{
 }
 /*----------------------Floating Tittle Services--------------*/
 
-.A-services-description{
-    font-size: 18px;
-    color: white;
-    background-color:var(--ElColorFresa);
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 550px;
-    display: block;
-    margin: 15px auto auto auto;
-}
-
-.B-services-description{
-    font-size: 18px;
-    color: var(--ElColorFresa);
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 550px;
-    display: block;
-    margin: auto;
-}
-
 .services-banner{
     width: 100%;
     height: 400px;
     object-fit: cover;
-    margin: 50px auto 20px auto;
+    margin: 50px auto auto auto;
 }
 
-.service-details{
-    width: 50%;
-    margin: auto;
+.service-container{
+    display: flex;
+}
+
+.sector-A-services{
+    background-color: #cedbe3;
+    height: 100%;
+    min-height: 80vh;
+    width: 100%;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.sector-B-services{
+    background-color: var(--dark);
+    min-height: 80vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .service-tittle{
-    text-align: center;
-    color: black;
-    background-color: #e9e2da;
-    font-size: 50px;
-    text-align: center;
-    border-radius: 15px;
-    width: 50%;
-    margin: 30px auto 30px auto;
-    padding: 1%;
+    font-size: 70px !important;
+    text-align: left;
+    margin: 0;
 }
 
-.service-description{
-    color: #fff;
-    font-size: 20px;
-    margin: 15px;
+.service-details{
+    display: flex;
+    margin: 0 auto auto auto;
+    flex-direction: column;
+    max-width: 900px;
 }
 
-.tittle-service-contact{
-    background-color: #000;
-    width: auto;
-    color: #fff;
-    font-size: 60px;
-    padding: 15px;
-    border-radius: 7px;
-    margin: 0 !important;
+.A-services-description{
+    font-size: 18px;
+    margin: 2% auto auto 0;
+    text-align: left;
+    line-height: 30px;
+}
+
+.B-services-description{
+    font-size: 18px;
+    margin: 2% auto auto 0;
+    text-align: left;
+    line-height: 30px;
+}
+
+.A-services-element-button{
+    margin: 20vh auto auto auto !important;
+    padding: 30px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    transition: all 500ms ease;
+}
+
+.B-services-element-button{
+    margin: 20vh auto auto auto !important;
+    padding: 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    transition: all 500ms ease;
 }
 
 .links-contact-service{
@@ -890,27 +908,21 @@ body{
     margin: 7px;
 }
 
-/*---------------------------WEB DEVELOPMENT----------------------------------*/
-.web-development-tittle{
-    color: #ffffff;
-    background-color: var(--ElColorFresa);
-    font-size: 50px;
-    border-radius: 15px;
-    width: 50%;
-    margin: 30px auto 30px auto;
-    padding: 1%;
+.last-service{
+    margin-bottom: 0 !important;
 }
 
+/*---------------------------WEB DEVELOPMENT------------------------------------*/
 .web-development-img{
     object-fit: cover;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     display: block;
     margin: auto;
-    width: 60%;
+    width: 40%;
 }
 
-/*-----------------------------INSIDE WEB DEVELOPMENT-----------------------------------*/
+/*-----------------------------INSIDE WEB DEVELOPMENT----------------------------*/
 .web-development-container{
     margin: 150px auto auto auto;
 }
@@ -938,33 +950,24 @@ body{
 }
 /*-----------SLIDER-----------*/
 
-/*---------------------------GRAPHIC DESIGN----------------------------------------*/
-
-.graphic-design-tittle{
-    color: var(--ElColorFresa);
-    background-color: #ffffff;
-    font-size: 50px;
-    border-radius: 15px;
-    width: 50%;
-    margin: 30px auto 30px auto;
-    padding: 1%;
-}
+/*---------------------------GRAPHIC DESIGN--------------------------------------*/
 
 .graphic-design-img{
     object-fit: cover;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     display: block;
-    margin: 40px auto auto auto;
-    width: 40%;
+    margin: auto;
+    width: 30%;
 }
-/*-----------------------------INSIDE GRAPHIC DESIGN-----------------------------------*/
+/*-----------------------------INSIDE GRAPHIC DESIGN------------------------------*/
 .graphic-design-container{
     margin: 150px auto auto auto;
 }
 
 
 /*-----------------------------LIBERACIÓN DE PS3-----------------------------------*/
+
 /* Support Page PS3 (Hidden) */
 .container-help-ps3{
     margin: 150px auto auto auto;
@@ -973,28 +976,11 @@ body{
     color: #FA7AF3;
 }
 
-.ps3-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-}
-
-.ps3-tittle{
-    color: #ffffff;
-    background-color: var(--ElColorFresa);
-    font-size: 50px;
-    border-radius: 15px;
-    width: 50%;
-    height: fit-content;
-    margin: auto;
-    padding: 1%;
-}
-
 /*------------------PS3 SLIDER------------------*/
 .container-ps3-slider{
-    width: 90%;
+    width: 40%;
     overflow: hidden;
-    margin: 2% auto 2% auto;
+    margin: auto;
     position: relative;
     border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
@@ -1048,26 +1034,26 @@ body{
     margin: 150px auto auto auto;
 }
 
-.PC-service-tittle{
-    color: var(--ElColorFresa);
-    background-color: #ffffff;
-    font-size: 50px;
-    border-radius: 15px;
-    width: 50%;
-    margin: 30px auto 30px auto;
-    padding: 1%;
-}
-
 .PC-service-img{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
     display: block;
     margin: auto;
     border-radius: 7px;
     margin: 40px auto 40px auto;
-    width: 40%;
+    width: 30%;
 }
 
 
 /*-----------------------------LIBERACIÓN DE PS2-----------------------------------*/
+.ps2-img{
+    object-fit: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
 .ps2-service-container{
     margin: 150px auto auto auto;
 }
@@ -1075,15 +1061,6 @@ body{
 /*---------------------------WII------------------------------------*/
 .wii-service-container{
     margin: 150px auto auto auto;
-}
-.Wii-tittle{
-    color: var(--ElColorFresa);
-    background-color: #ffffff;
-    font-size: 50px;
-    border-radius: 15px;
-    width: 50%;
-    margin: 30px auto 30px auto;
-    padding: 1%;
 }
 
 .wii-img{
