@@ -782,6 +782,14 @@ body{
 }
 /*----------------------Floating Tittle Services--------------*/
 
+/* The other HTML distribution */
+.cascade{
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+}
+/* The other HTML distribution */
+
 .services-banner{
     width: 100%;
     height: 400px;
