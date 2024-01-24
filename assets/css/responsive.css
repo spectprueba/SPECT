@@ -655,7 +655,92 @@
         margin-bottom: 24px !important;
     }
 }
-    
+
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------------- CONTACT US -------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 1366px){
+    .contact-us-element {
+        margin: 10% 10%;
+    }
+}
+
+/*---------------------------------1290 WIDTH-------------------------*/
+@media screen and (max-width: 1290px){
+    .SPECT-tittle-contacto-container {
+        margin-top: 15%;
+    }
+}
+
+/*---------------------------------1090 WIDTH-------------------------*/
+@media screen and (max-width: 1090px){
+    /* NOTHING */
+}
+
+/*---------------------------------900 WIDTH-------------------------*/
+@media screen and (max-width: 900px){
+    .SPECT-tittle-contacto h1 {
+        font-size: 50px;
+    }
+    .SPECT-tittle-contacto h2 {
+        font-size: 20px;
+    }
+    .SPECT-tittle-contacto-container {
+        margin-top: 20%;
+    }
+    .contact-us-form h1 {
+        width: 250px;
+        font-size: 20px;
+    }
+}
+
+/*---------------------------------815 WIDTH-------------------------*/
+@media screen and (max-width: 815px){
+    .contact-us-element {
+        flex-direction: column-reverse;
+    }
+    .contact-us-media-img {
+        width: 70%;
+    }
+    .contact-us-links {
+        width: 100%;
+    }
+    .contact-us-links li {
+        height: 100px;
+    }
+    .contact-us-photo {
+        width: 0%;
+    }
+    .contact-us-form {
+        width: 100%;
+    }
+}
+
+/*---------------------------------720 WIDTH-------------------------*/
+@media screen and (max-width: 720px){
+    /* NOTHING */
+}
+
+/*---------------------------------615 WIDTH-------------------------*/
+@media screen and (max-width: 615px){
+    /* NOTHING */
+}
+
+/*---------------------------------419 WIDTH -------------------------*/
+@media screen and (max-width: 419px){
+    .SPECT-tittle-contacto-container {
+        margin-top: 40%;
+    }
+    .contact-us-element {
+        margin: 10% 5%;
+    }
+    .contact-us-form {
+        padding: 20px;
+    }
+    .contact-us-media-img {
+        width: 90%;
+    }
+}
 
 /*------------------------------------------------------------------- END  -------------------------------------------------------------------*/
 /*---------------------------------1366 WIDTH-------------------------*/
