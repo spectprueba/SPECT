@@ -742,6 +742,115 @@
     }
 }
 
+/* ----------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- INSIDE PRODUCTS -------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- BATOCERA -------------------------------------- */
+/*---------------------------------1366 WIDTH-------------------------*/
+@media screen and (max-width: 1366px){
+    .links-contact-product {
+        width: 40%;
+    }
+}
+
+/*---------------------------------1290 WIDTH-------------------------*/
+@media screen and (max-width: 1290px){
+    /* NOTHING */
+}
+
+/*---------------------------------1090 WIDTH-------------------------*/
+@media screen and (max-width: 1090px){
+    .Batocera-floating-container{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    .Batocera-mobile-container{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+}
+
+/*---------------------------------900 WIDTH-------------------------*/
+@media screen and (max-width: 900px){
+    .product-tittle {
+        width: 70%;
+        font-size: 40px;
+    }
+    .product-details {
+        width: 80%;
+        margin: auto;
+    }
+    .product-image {
+        width: 100%;
+    }
+    .tittle-product-contact {
+        font-size: 40px;
+    }
+    .links-contact-product {
+        width: 50%;
+    }
+}
+
+/*---------------------------------815 WIDTH-------------------------*/
+@media screen and (max-width: 815px){
+    /* NOTHING */
+}
+
+/*---------------------------------720 WIDTH-------------------------*/
+@media screen and (max-width: 720px){
+    .links-contact-product {
+        width: 60%;
+    }
+    .product-email-link {
+        width: 35px;
+        margin: 10px;
+    }
+    .product-messenger-link {
+        width: 35px;
+        margin: 10px;
+    }
+    .product-whatsapp-link {
+        width: 35px;
+        margin: 10px;
+    }
+}
+
+/*---------------------------------615 WIDTH-------------------------*/
+@media screen and (max-width: 615px){
+    .links-contact-product a {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+/*---------------------------------419 WIDTH -------------------------*/
+@media screen and (max-width: 419px){
+    .product-tittle {
+        width: 90%;
+        font-size: 30px;
+    }
+    .product-description {
+        font-size: 12px;
+    }
+    .tittle-product-contact {
+        font-size: 30px;
+    }
+    .links-contact-product {
+        width: 70%;
+    }
+    .links-contact-product a {
+        width: 80px;
+        font-size: 12px;
+    }
+    .batocera-container {
+        margin: 100px auto auto auto;
+    }
+}
+
+
 /*------------------------------------------------------------------- END  -------------------------------------------------------------------*/
 /*---------------------------------1366 WIDTH-------------------------*/
 @media screen and (max-width: 1366px){

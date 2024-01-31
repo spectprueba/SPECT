@@ -643,12 +643,12 @@ body{
     margin: 7px;
 }
 
-.product-email-whatsapp{
+.product-whatsapp-link{
     width: 40px;
     margin: 7px;
 }
 
-.product-email-messenger{
+.product-messenger-link{
     width: 40px;
     margin: 7px;
 }
@@ -699,15 +699,13 @@ body{
 }
 
 
-
-/* HERE */
-.Batocera_game_list_mobile_container{
+.Batocera-mobile-container{
     margin: 20px auto 40px auto;
     visibility: hidden;
     opacity: 0;
     display: none;
 }
-.element_B_tittle_2_Batocera_mobile{
+.Batocera-mobile h1{
     color: #ffff;
     background-color:var(--ElColorFresa);
     width: 100%;
@@ -719,23 +717,23 @@ body{
     margin: auto;
     margin-top: 0;
     text-align: center;
-}.element_B_tittle_2_Batocera_mobile li{
+}.Batocera-mobile li{
     margin: 8px auto 8px auto;
 }
-.element_B_tittle_2_Batocera_mobile ul li{
+.Batocera-mobile ul li{
     list-style:none;
     text-decoration: none;
-}.element_B_tittle_2_Batocera_mobile ul li a{
+}.Batocera-mobile ul li a{
     display: block;
     padding: 5px;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: 200ms ease-in-out;
-}.element_B_tittle_2_Batocera_mobile ul li a:visited{
+}.Batocera-mobile ul li a:visited{
     list-style: none;
     text-decoration: none;
-}.element_B_tittle_2_Batocera_mobile a:hover{
+}.Batocera-mobile a:hover{
     transform: scale(1.2);
     transition: all 250ms ease;
     color: #FFFF;
