@@ -828,13 +828,6 @@ body{
     margin: 0;
 }
 
-.service-details{
-    display: flex;
-    margin: 0 auto auto auto;
-    flex-direction: column;
-    max-width: 900px;
-}
-
 .A-services-description{
     font-size: 18px;
     margin: 2% auto auto 0;
@@ -857,7 +850,10 @@ body{
     border-radius: 5px;
     text-align: center;
     width: 300px;
-    transition: all 500ms ease;
+    transition: all 350ms ease;
+}.A-services-element-button:hover{
+    color: black;
+    background-color: var(--Moradito);
 }
 
 .B-services-element-button{
@@ -869,6 +865,45 @@ body{
     text-align: center;
     width: 300px;
     transition: all 500ms ease;
+}.B-services-element-button:hover{
+    color: white;
+    background-color: var(--Moradito);
+}
+
+.inside-service-tittle{
+    font-size: 50px;
+    text-align: center;
+    background-color: #e9e2da;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto auto 30px auto;
+    padding: 1%;
+}
+
+.service-details{
+    width: 50%;
+    margin: auto;
+}
+
+.inside-service-details{
+    width: 50%;
+    margin: auto;
+}
+
+.service-description{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.tittle-service-contact{
+    background-color: #000;
+    width: auto;
+    color: #fff;
+    font-size: 60px;
+    padding: 15px;
+    border-radius: 7px;
+    margin: 0 !important;
 }
 
 .links-contact-service{
@@ -897,6 +932,8 @@ body{
     color: black;
     transform: scale(1.1);
     background-color: #e2c4ee;
+}.links-contact-service p{
+    margin: 0 !important;
 }
 
 .service-email-link{
@@ -904,12 +941,12 @@ body{
     margin: 7px;
 }
 
-.service-email-whatsapp{
+.service-whatsapp-link{
     width: 40px;
     margin: 7px;
 }
 
-.service-email-messenger{
+.service-messenger-link{
     width: 40px;
     margin: 7px;
 }
@@ -938,7 +975,6 @@ body{
     margin-bottom: 25px;
     width: 90%;
     max-width: 900px;
-    grid-column: 2/4;
     overflow: hidden;
 }
 .slider_web{
@@ -947,9 +983,10 @@ body{
     height: 400px;
 }
 .slider_web_section{
- width: 100%;
+    width: 100%;
 }
 .slider_web_img{
+    object-fit: contain;
     display: block;
     width: 100%;
     height: 100%;
@@ -1048,7 +1085,15 @@ body{
     margin: 40px auto 40px auto;
     width: 30%;
 }
-
+/*-----------------------------INSIDE PC SERVICE-----------------*/
+.SSD-UPDATE{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    margin: 40px auto 40px auto;
+    width: 90%;
+}
 
 /*-----------------------------LIBERACIÓN DE PS2-----------------------------------*/
 .ps2-img{

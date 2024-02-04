@@ -4,25 +4,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--No zoom mobile-->
 		<!--Los estilos personalizados-->
 		<link rel="stylesheet" href="../assets/css/estilos.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
 		<!--Las fuentes personalizadas-->
 		<link rel="stylesheet" type="text/css" href="../assets/css/fuentes.css">
 		<!--Icono-->
 		<link rel="shortcut icon" type="image/x-icon" href="../SPECT.ico">
 		
-		<title>SPECT PÁGINAS WEB</title>
+		<title>SPECT DESARROLLO WEB</title>
 	</head>
 
 	<body>
         <div class="general-container">
 
-			<!---------------------------Start of the header--------------------------->
+            <!---------------------------Start of the header--------------------------->
             <div class="container-header">
 
                 <div class="logo-container"> 
-                    <a href="index.html"> <img src="../assets/images/logos/Isotipo-SPECT-BlancoNegro.svg" class="logo-header"> </a> 
+                    <a href="../index.html"> <img src="../assets/images/logos/Isotipo-SPECT-BlancoNegro.svg" class="logo-header"> </a> 
                 </div>
 
                 <nav class="menu Gibson-Regular">
@@ -39,8 +40,8 @@
                     <span></span>
                 </nav>
 
-                <div class="container-toggle-bar" id="container_toggle_bar">
-                    <div class="cont-toggle-bar" id="cont_toggle_bar">
+                <div class="menu-bars-background" id="menu-bars-background">
+                    <div class="menu-elements Gibson-Regular" id="menu-elements">
                         <nav>
                             <a href="../productos.html"> Productos</a>
                             <a href="../servicios.html"> Servicios</a>
@@ -51,7 +52,7 @@
                     </div>
                 </div>
             </div>
-			<!---------------------------End of the header----------------------------->
+            <!---------------------------End of the header----------------------------->
 
             <!--------------------------------LOADER----------------------------------->
 			<div class="welcome" id="welcome">
@@ -65,16 +66,18 @@
             <!---------------------------START OF THE CONTENT-------------------------->
             <div class="web-development-container">
                 
-                <div class="service-tittle Gibson-Bold">
+                <div class="inside-service-tittle Gibson-Bold">
                     CREACIÓN DE PÁGINAS WEB
                 </div>
 
-                <div class="service-details">
+                <div class="inside-service-details">
 
                     <div class="service-description Gibson-Regular">
                         <h1>¿De qué trata?</h1>
-                        El servicio de creación de páginas web está pensado principalmente para todos aquellos pequeños empresarios qué desean iniciar su negocio en línea
-                        pero no tienen o no saben como.
+                        <p>
+                            El servicio de creación de páginas web está pensado principalmente para todos aquellos pequeños empresarios qué desean iniciar su negocio en línea
+                            pero no tienen o no saben como.
+                        </p>
                     </div>
 
                     <!-- SLIDER -->
@@ -93,32 +96,35 @@
 
                     <div class="service-description Gibson-Regular">
                         <h1>¿Cómo funciona?</h1>
-                        Usted deberá ponerse en contacto con nosotros por los medios que le brindamos para conocer sus necesidades y cotizarle de manera adecuada.
-                        <br><br>
+                        <p>
+                            Usted deberá ponerse en contacto con nosotros por los medios que le brindamos para conocer sus necesidades y cotizarle de manera adecuada.
+                        </p>
                         <h3 class="center-text">¡Empiece ahora!</h3>
                     </div>
                     
                 </div>
 
-                <div class="tittle-service-contact center-text Gibson-Regular">Contactá con nosotros acá</div>
+                <h1 class="tittle-service-contact center-text Gibson-Regular">Contactá con nosotros acá</h1>
 
                 <div class="links-contact-service Gibson-Regular">
 
-                    <a href="mailto:spect.soluciones.informaticas@gmail.com?Subject=Hola, quisiera más información sobre el diseño de una página web." target="_blank">       <img src="../assets/images/icons/email.png" alt="" class="service-email-link"> CORREO </a>
+                    <a href="mailto:spect.soluciones.informaticas@gmail.com?Subject=Hola, quisiera más información sobre el diseño de una página web." target="_blank">       <img src="../assets/images/icons/email.png" alt="" class="service-email-link"> <p>CORREO</p> </a>
 
-                    <a href="https://api.whatsapp.com/send?phone=50683660728 &text=Hola, me interesa el servicio de diseño de páginas web" target="_blank">                   <img src="../assets/images/icons/whatsapp.png" alt="" class="service-email-whatsapp"> WHATSAPP </a>
+                    <a href="https://api.whatsapp.com/send?phone=50683660728 &text=Hola, me interesa el servicio de diseño de páginas web" target="_blank">                   <img src="../assets/images/icons/whatsapp.png" alt="" class="service-whatsapp-link"> <p>WHATSAPP</p> </a>
                 
-                    <a href="https://www.facebook.com/111067058058334/photos/a.111073584724348/176746951490344/" target="_blank">                                             <img src="../assets/images/icons/messenger.png" alt="" class="service-email-messenger"> MESSENGER </a>
+                    <a href="https://www.facebook.com/111067058058334/photos/a.111073584724348/176746951490344/" target="_blank">                                             <img src="../assets/images/icons/messenger.png" alt="" class="service-messenger-link"> <p>MESSENGER</p> </a>
                 
                 </div>
 
                 <div class="go-back-button Gibson-Regular">
                     <a href="../servicios.html"> Volver a lista de servicios </a>
                 </div>
-                <!---------------------------END OF THE CONTENT---------------------------->
-                <script src="../assets/js/sliders-web.js"></script>
-                <script src="../assets/js/animations-responsive.js"></script>
+
             </div>
+
         </div>
+        <!---------------------------END OF THE CONTENT---------------------------->
+        <script src="../assets/js/sliders-web.js"></script>
+        <script src="../assets/js/animations-responsive.js"></script>
 	</body>
 </html>

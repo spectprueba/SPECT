@@ -850,6 +850,152 @@
     }
 }
 
+/* ----------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- INSIDE SERVICES -------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- WEB DEVELOPMENT -------------------------------------- */
+/*---------------------------------1366 WIDTH-------------------------*/
+@media screen and (max-width: 1366px){
+
+}
+
+/*---------------------------------1290 WIDTH-------------------------*/
+@media screen and (max-width: 1290px){
+    .links-contact-service {
+        width: 40%;
+    }
+}
+
+/*---------------------------------1090 WIDTH-------------------------*/
+@media screen and (max-width: 1090px){
+    .inside-service-tittle {
+        width: 70%;
+    }
+    .inside-service-details {
+        width: 70%;
+    }
+}
+
+/*---------------------------------900 WIDTH-------------------------*/
+@media screen and (max-width: 900px){
+    .inside-service-tittle {
+        font-size: 30px;
+    }
+    .inside-service-details h1{
+        font-size: 30px;
+    }
+    .inside-service-details p{
+        font-size: 16px;
+    }
+    .container_slider_web_page {
+        margin: 0 auto!important;
+    }
+    .tittle-service-contact {
+        font-size: 40px;
+    }
+    .links-contact-service {
+        width: 50%;
+    }
+    .go-back-button a {
+        font-size: 14px;
+    }
+}
+
+/*---------------------------------815 WIDTH-------------------------*/
+@media screen and (max-width: 815px){
+    .links-contact-service a {
+        font-size: 12px;
+        width: 100px;
+    }
+    .links-contact-service p {
+        margin: 4% auto !important;
+    }
+    .service-email-link{
+        width: 40px;
+        margin: auto 20px;
+    }
+    .service-messenger-link{
+        width: 40px;
+        margin: auto 20px;
+    }
+    .service-whatsapp-link{
+        width: 40px;
+        margin: auto 20px;
+    }
+    .inside-service-details p {
+        font-size: 12px;
+    }
+    .slider_web {
+        height: 300px;
+    }
+    .tittle-service-contact {
+        font-size: 30px;
+    }
+    .go-back-button a {
+        font-size: 12px;
+    }
+    .web-development-container {
+        margin: 100px auto auto auto;
+    }
+}
+
+/*---------------------------------720 WIDTH-------------------------*/
+@media screen and (max-width: 720px){
+    /* NOTHING */
+}
+
+/*---------------------------------615 WIDTH-------------------------*/
+@media screen and (max-width: 615px){
+    .slider_web {
+        height: 230px;
+    }
+    .inside-service-tittle {
+        width: 80%;
+    }
+    .links-contact-service {
+        width: 60%;
+    }
+}
+
+/*---------------------------------419 WIDTH -------------------------*/
+@media screen and (max-width: 419px){
+    .inside-service-tittle {
+        font-size: 25px;
+    }
+    .inside-service-details {
+        width: 90%;
+    }
+    .inside-service-details h1 {
+        font-size: 20px;
+    }
+    .inside-service-details p {
+        font-size: 11px;
+    }
+    .tittle-service-contact {
+        font-size: 25px;
+    }
+    .links-contact-service {
+        width: 70%;
+    }
+    .links-contact-service a {
+        font-size: 11px;
+        width: 80px;
+    }
+    .service-email-link{
+        width: 30px;
+    }
+    .service-messenger-link{
+        width: 30px;
+    }
+    .service-whatsapp-link{
+        width: 30px;
+    }
+    .go-back-button a {
+        width: 170px;
+        font-size: 11px;
+    }
+}
 
 /*------------------------------------------------------------------- END  -------------------------------------------------------------------*/
 /*---------------------------------1366 WIDTH-------------------------*/

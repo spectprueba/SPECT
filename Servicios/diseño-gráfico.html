@@ -4,9 +4,10 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--No zoom mobile-->
         <!--Los estilos personalizados-->
         <link rel="stylesheet" href="../assets/css/estilos.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
         <!--Las fuentes personalizadas-->
         <link rel="stylesheet" type="text/css" href="../assets/css/fuentes.css">
         <!--Icono-->
@@ -17,13 +18,14 @@
 
 	<body>
         <div class="general-container">
+
             <!---------------------------Start of the header--------------------------->
             <div class="container-header">
-                
+
                 <div class="logo-container"> 
-                    <a href="index.html"> <img src="../assets/images/logos/Isotipo-SPECT-BlancoNegro.svg" class="logo-header"> </a> 
+                    <a href="../index.html"> <img src="../assets/images/logos/Isotipo-SPECT-BlancoNegro.svg" class="logo-header"> </a> 
                 </div>
-                
+
                 <nav class="menu Gibson-Regular">
                     <a href="../productos.html"> Productos</a>
                     <a href="../servicios.html"> Servicios</a>
@@ -31,15 +33,15 @@
                     <a class="facebook"  href="https://www.facebook.com/SPECT-Soluciones-Inform%C3%A1ticas-111067058058334" target="_blank"></a>
                     <a class="instagram"  href="https://www.instagram.com/spect_cr/" target="_blank"> </a>
                 </nav>
-                
+
                 <nav class="toggle" id="toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </nav>
-                
-                <div class="container-toggle-bar" id="container_toggle_bar">
-                    <div class="cont-toggle-bar" id="cont_toggle_bar">
+
+                <div class="menu-bars-background" id="menu-bars-background">
+                    <div class="menu-elements Gibson-Regular" id="menu-elements">
                         <nav>
                             <a href="../productos.html"> Productos</a>
                             <a href="../servicios.html"> Servicios</a>
@@ -63,7 +65,7 @@
             <!---------------------------START OF THE CONTENT--------------------------> 
             <div class="graphic-design-container">
                 
-                <div class="service-tittle Gibson-Bold">
+                <div class="inside-service-tittle Gibson-Bold">
                     DEPARTAMENTO DE DISEÑO GRÁFICO
                 </div>
                 
@@ -79,17 +81,10 @@
                     </div>
                     
                     <!-- SLIDER -->
-                    <div class="container_slider_web_page">
-                        <div class="slider_web" id="slider_web">
-                            <div class="slider_web_section"><img src="../assets/images/graphic-design-sliders/1.png" alt="" class="slider_web_img"></div>
-                            
-                            <div class="slider_web_section"><img src="../assets/images/graphic-design-sliders/2.jpg" alt="" class="slider_web_img"></div>
-                            
-                            <div class="slider_web_section"><img src="../assets/images/graphic-design-sliders/3.jpg" alt="" class="slider_web_img"></div>
-                            
-                            <div class="slider_web_section"><img src="../assets/images/graphic-design-sliders/4.jpg" alt="" class="slider_web_img"></div>
-                        </div>
-                    </div>
+                    <img src="../assets/images/graphic-design-sliders/1.png" alt="" class="slider_web_img">
+                    <img src="../assets/images/graphic-design-sliders/2.jpg" alt="" class="slider_web_img">
+                    <img src="../assets/images/graphic-design-sliders/3.jpg" alt="" class="slider_web_img">
+                    <img src="../assets/images/graphic-design-sliders/4.jpg" alt="" class="slider_web_img">
                     <!-- SLIDER -->
                     
                     <div class="service-description Gibson-Regular">
@@ -102,11 +97,11 @@
 
                 <div class="links-contact-service Gibson-Regular">
 
-                    <a href="mailto:spect.soluciones.informaticas@gmail.com?Subject=Hola, quisiera más información sobre sus servicios de diseño gráfico." target="_blank">     <img src="../assets/images/icons/email.png" alt="" class="service-email-link"> CORREO </a>
+                    <a href="mailto:spect.soluciones.informaticas@gmail.com?Subject=Hola, quisiera más información sobre sus servicios de diseño gráfico." target="_blank">     <img src="../assets/images/icons/email.png" alt="" class="service-email-link"> <p>CORREO</p> </a>
 
-                    <a href="https://api.whatsapp.com/send?phone=50683660728 &text=Hola, me interesa el servicio de diseño gráfico." target="_blank">                           <img src="../assets/images/icons/whatsapp.png" alt="" class="service-email-whatsapp"> WHATSAPP </a>
+                    <a href="https://api.whatsapp.com/send?phone=50683660728 &text=Hola, me interesa el servicio de diseño gráfico." target="_blank">                           <img src="../assets/images/icons/whatsapp.png" alt="" class="service-whatsapp-link"> <p>WHATSAPP</p> </a>
                 
-                    <a href="https://www.facebook.com/111067058058334/photos/pb.100075840117843.-2207520000/143370111494695/?type=3" target="_blank">                           <img src="../assets/images/icons/messenger.png" alt="" class="service-email-messenger"> MESSENGER </a>
+                    <a href="https://www.facebook.com/111067058058334/photos/pb.100075840117843.-2207520000/143370111494695/?type=3" target="_blank">                           <img src="../assets/images/icons/messenger.png" alt="" class="service-messenger-link"> <p>MESSENGER</p> </a>
                 
                 </div>
                 
@@ -114,7 +109,6 @@
                     <a href="../servicios.html"> Volver a lista de servicios </a>
                 </div>
                 <!---------------------------END OF THE CONTENT---------------------------->
-                <script src="../assets/js/sliders-web.js"></script>
                 <script src="../assets/js/animations-responsive.js"></script>
             </div>
         </div>
