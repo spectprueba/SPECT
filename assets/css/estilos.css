@@ -965,7 +965,7 @@ body{
     width: 40%;
 }
 
-/*-----------------------------INSIDE WEB DEVELOPMENT----------------------------*/
+/*-----------------------------desarrollo-web.html----------------------------*/
 .web-development-container{
     margin: 150px auto auto auto;
 }
@@ -993,7 +993,7 @@ body{
 }
 /*-----------SLIDER-----------*/
 
-/*---------------------------GRAPHIC DESIGN--------------------------------------*/
+/*---------------------------INSIDE GRAPHIC DESIGN--------------------------------------*/
 
 .graphic-design-img{
     object-fit: cover;
@@ -1003,13 +1003,13 @@ body{
     margin: auto;
     width: 30%;
 }
-/*-----------------------------INSIDE GRAPHIC DESIGN------------------------------*/
+/*-----------------------------diseño-grafico.html------------------------------*/
 .graphic-design-container{
     margin: 150px auto auto auto;
 }
 
 
-/*-----------------------------LIBERACIÓN DE PS3-----------------------------------*/
+/*-----------------------------CONSOLES SERVICE-----------------------------------*/
 
 /* Support Page PS3 (Hidden) */
 .container-help-ps3{
@@ -1019,47 +1019,32 @@ body{
     color: #FA7AF3;
 }
 
-/*------------------PS3 SLIDER------------------*/
-.container-ps3-slider{
-    width: 40%;
-    overflow: hidden;
-    margin: auto;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-    grid-row: 1/3;
+.consoles-service-description ul, li{
+    text-decoration: none;
+    list-style: disc;
+    text-align: left;
+    margin: 2% auto 2% 5%;
 }
-.slider_services{
-    display: flex;
-    width: 300%; /*CADA IMAGEN EQUIVALE A UN 100%*/
-    height: 400px;
-    margin-left: -100%;
-}
-.slider_section_services{
-    width: 100%;
-}
-.slider_img_services{
-    display: block;
-    width: 100%;
-    height: 100%;
+
+.consoles-service-img{
     object-fit: cover;
-}
-/*------------------PS3 SLIDER------------------*/
-
-.PS3_txtarea_1{
-    grid-row: 2/4;
-    grid-column: 1/2;
-    padding: 20px;
-}
-.PS3_txtarea_2{
-    grid-row: 3/4;
-    grid-column: 1/2;
-    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 30%;
 }
 
-/*-----------------------------DENTRO DE LIBERACIÓN DE PS3-----------------------------------*/
-.ps3-service-container{
+/*-----------------------------consolas.html-----------------------------------*/
+.consoles-service-container{
     margin: 150px auto auto auto;
+}
+
+.consoles-service-banner{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
 }
 
 .imagen_service{
@@ -1085,7 +1070,7 @@ body{
     margin: 40px auto 40px auto;
     width: 30%;
 }
-/*-----------------------------INSIDE PC SERVICE-----------------*/
+/*-----------------------------pc.html-----------------*/
 .SSD-UPDATE{
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
     display: block;
@@ -1093,34 +1078,6 @@ body{
     border-radius: 7px;
     margin: 40px auto 40px auto;
     width: 90%;
-}
-
-/*-----------------------------LIBERACIÓN DE PS2-----------------------------------*/
-.ps2-img{
-    object-fit: cover;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    display: block;
-    margin: auto;
-    width: 40%;
-}
-
-.ps2-service-container{
-    margin: 150px auto auto auto;
-}
-
-/*---------------------------WII------------------------------------*/
-.wii-service-container{
-    margin: 150px auto auto auto;
-}
-
-.wii-img{
-    object-fit: cover;
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    display: block;
-    margin: 40px auto 40px auto;
-    width: 40%;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
